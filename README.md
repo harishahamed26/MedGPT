@@ -1,6 +1,15 @@
-**Description**
+![MedGPT Architecture](https://github.com/harishahamed26/MedGPT/assets/36252984/89423076-4a8a-4f0f-8df5-e64243421691)**Description**
 
-This repository contains a Python script called app.py that allows users to summarize a PDF, Word and .TXT document using natural language processing. The script uses the gradio library for building a simple web interface for users to input the PDF, Word and .TXT file path and a custom prompt for summarization.
+This repository contains a Python script called appStreamlit.py that allows users to summarize a PDF, Word dot TXT, and Audio document using natural language processing. The script uses the Streamlit library to build a simple web interface for users to input the PDF, Word, dot TXT, and Audio file path and a custom prompt for summarization.
+
+Website: [https://medgpt-raq-bot.streamlit.app/]([url](https://medgpt-raq-bot.streamlit.app/))
+
+Architecture:
+
+![MedGPT Architecture](https://github.com/harishahamed26/MedGPT/assets/36252984/d1c55d20-e537-4272-8f2d-ba10b9efd869)
+
+
+![MedGPT Architecture Description](https://github.com/harishahamed26/MedGPT/assets/36252984/502a08de-e948-42ef-8bcb-18cd5f145357)
 
 
 Installing dependencies for running this project locally
@@ -8,7 +17,7 @@ To get started, you need to have Python installed on your machine and then creat
 to avoid any conflicts with other projects that may be present in your system. Here are some steps to
 install all necessary packages before starting development or deployment of our application:
 
-1. To create a new virtual environment in mac or windows or linux refer the below link 
+1. To create a new virtual environment in Mac or windows or Linux refer to the below link 
 
 https://realpython.com/python-virtual-environments-a-primer/
 
@@ -18,7 +27,7 @@ source./venv/bin/activate   # activate the newly created virtual environment
 
 3. Clone the repository 
 
-4. Navigate into MEDGPT directory ( cd /path/to/medgpt )
+4. Navigate into the MEDGPT directory ( cd /path/to/medgpt )
 
 5. Now let's move over to installing the required packages 
 
@@ -38,7 +47,7 @@ OPENAI_API_KEY = ''
     
     https://beta.openai.com/account/api-keys
 
-8. Once all the required package get completed Just execute the below command in the terminal:
+8. Once all the required packages are completed Just execute the below command in the terminal:
 
 streamlit run app.py
 
@@ -46,33 +55,20 @@ streamlit run app.py
 
 **Necessary Packages:**
 
-pip install streamlit openai tiktoken langchain nltk python-docx python-dotenv PyPDF2 faiss-cpu
+!pip install -r requirements.txt
 
 
-
-For Google Collab
+**For Google Collab**
 
 !npm install localtunnel
 
-!pip install -q streamlit openai tiktoken langchain nltk python-docx python-dotenv PyPDF2 faiss-cpu pip install audio-recorder-streamlit SpeechRecognition transformers
-
 !python -m nltk.downloader all 
 
-Steps:
-
-1. Import all the files
-
-2. create a .env file and include the OpenAI API key 
-
-3. Write the app.py using the below command
-
-%%writefile app.py
-
-4. Execute the streamlit command along with npx command to start the local server 
 
 !streamlit run /content/app.py & npx localtunnel --port 8501
 
-5. Once the server is connected copy the external url IP address and submit to the server
+Once the server is connected copy the external URL IP address and submit it to the server
+
 
 
 
