@@ -256,7 +256,7 @@ def ConvoPlace(queries, ConversationModel, target_language, processor, model, sp
       st.header('Last Response generated')
       st.audio(speech.numpy(), sample_rate = SampleRate)
             #st.audio(speech.numpy(), sample_rate = SampleRate)
-@st.cache
+@st.cache_resource
 def load_model():
     processor = SpeechT5Processor.from_pretrained("microsoft/speecht5_tts")
     model = SpeechT5ForTextToSpeech.from_pretrained("microsoft/speecht5_tts")
