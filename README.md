@@ -1,78 +1,88 @@
+# MedGPT Bot Based on Large Language Models
+----
 **Description**
 
-This repository contains a Python script called app.py that allows users to summarize a PDF, Word and .TXT document using natural language processing. The script uses the gradio library for building a simple web interface for users to input the PDF, Word and .TXT file path and a custom prompt for summarization.
+Welcome to the MedGPT Bot repository! This project contains a Python script appStreamlit.py, that harnesses the power of natural language processing to summarize various types of documents, including PDFs, Word files (.doc and .docx), text files (.txt), and audio documents. The user interface for this script is built using the Streamlit library, allowing users to input the file path and a custom prompt for summarization.
+
+https://medgpt-raq-bot.streamlit.app/
+
+----
+
+**Architecture Description**
+
+![MedGPT Architecture](https://github.com/harishahamed26/MedGPT/assets/36252984/dddf4bc1-6cdd-434d-b3ac-35f3dbc988a2)
 
 
-Installing dependencies for running this project locally
-To get started, you need to have Python installed on your machine and then create a virtual environment
-to avoid any conflicts with other projects that may be present in your system. Here are some steps to
-install all necessary packages before starting development or deployment of our application:
+![MedGPT Architecture Description](https://github.com/harishahamed26/MedGPT/assets/36252984/502a08de-e948-42ef-8bcb-18cd5f145357)
 
-1. To create a new virtual environment in mac or windows or linux refer the below link 
+### Getting Started
 
-https://realpython.com/python-virtual-environments-a-primer/
+Before you can run this project locally, make sure you have Python installed on your machine. It's also recommended to create a virtual environment to manage project dependencies and avoid conflicts with other projects. Here are the steps to set up and run MedGPT Bot:
 
+1. Create a new virtual environment using the instructions provided in this [link](https://realpython.com/python-virtual-environments-a-primer/).
 
-2. virtualenv venv # creates a new python env called' .venv' inside 'MEDGPT/' folder
-source./venv/bin/activate   # activate the newly created virtual environment
+2. Clone this repository to your local machine.
 
-3. Clone the repository 
+3. Navigate to the `MEDGPT` directory using the command `cd /path/to/medgpt`.
 
-4. Navigate into MEDGPT directory ( cd /path/to/medgpt )
+4. Install the required Python packages by running:
 
-5. Now let's move over to installing the required packages 
+   ```
+   pip install -r requirements.txt
+   ```
 
-You can install the required libraries using the following command:
+5. Execute the following command to download the necessary NLTK data for text splitting:
 
-pip install -r requirement.txt
+   ```
+   python -m nltk.downloader all
+   ```
 
-6. It is necessary to execute the below command as well to perform the nltk text splitting
-    
-python -m nltk.downloader all 
+6. Create a `.env` file and paste your OpenAI API key:
 
-7. Create a .env file and paste your OpenAI API key 
+   ```
+   OPENAI_API_KEY = 'your_openai_api_key_here'
+   ```
 
-OPENAI_API_KEY = ''
+   To obtain your OpenAI API key, visit [this link](https://beta.openai.com/account/api-keys).
 
-    To get your OpenAi key Click on the below link:
-    
-    https://beta.openai.com/account/api-keys
+7. Once you have all the required packages and settings in place, run the application with the following command:
 
-8. Once all the required package get completed Just execute the below command in the terminal:
+   ```
+   streamlit run app.py
+   ```
 
-streamlit run app.py
+Necessary Packages
 
+You can install the necessary Python packages using the following command:
 
+```
+pip install -r requirements.txt
+```
 
-**Necessary Packages:**
+For Google Colab
 
-pip install streamlit openai tiktoken langchain nltk python-docx python-dotenv PyPDF2 faiss-cpu
+If you plan to run this project on Google Colab, follow these additional steps:
 
+1. Install the localtunnel package using npm:
 
+   ```
+   !npm install localtunnel
+   ```
 
-For Google Collab
+2. Download the necessary NLTK data:
 
-!npm install localtunnel
+   ```
+   !python -m nltk.downloader all
+   ```
 
-!pip install -q streamlit openai tiktoken langchain nltk python-docx python-dotenv PyPDF2 faiss-cpu pip install audio-recorder-streamlit SpeechRecognition transformers
+3. Run the application and expose it using localtunnel:
 
-!python -m nltk.downloader all 
+   ```
+   !streamlit run /content/app.py & npx localtunnel --port 8501
+   ```
 
-Steps:
+   Once the server is connected, copy the external URL IP address and submit it to the server.
 
-1. Import all the files
+---
 
-2. create a .env file and include the OpenAI API key 
-
-3. Write the app.py using the below command
-
-%%writefile app.py
-
-4. Execute the streamlit command along with npx command to start the local server 
-
-!streamlit run /content/app.py & npx localtunnel --port 8501
-
-5. Once the server is connected copy the external url IP address and submit to the server
-
-
-
+Feel free to modify and expand upon this README file as needed to provide additional information, usage instructions, or any other details specific to your project.
