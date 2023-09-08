@@ -1,4 +1,7 @@
-![MedGPT Architecture](https://github.com/harishahamed26/MedGPT/assets/36252984/89423076-4a8a-4f0f-8df5-e64243421691)**Description**
+**#MedGPT Bot Based on Large Language Models**
+
+
+**Description**
 
 This repository contains a Python script called appStreamlit.py that allows users to summarize a PDF, Word dot TXT, and Audio document using natural language processing. The script uses the Streamlit library to build a simple web interface for users to input the PDF, Word, dot TXT, and Audio file path and a custom prompt for summarization.
 
