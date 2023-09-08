@@ -12,3 +12,4 @@ SpeechRecognition
 transformers
 sentencepiece 
 datasets
+torch
