@@ -1,21 +1,21 @@
----
-
 # MedGPT Bot Based on Large Language Models
-
-![MedGPT Architecture](https://github.com/harishahamed26/MedGPT/assets/36252984/d1c55d20-e537-4272-8f2d-ba10b9efd869)
-
+----
 **Description**
 
-Welcome to the MedGPT Bot repository! 
-This project contains a Python script, appStreamlit.py, that harnesses the power of natural language processing to summarize various types of documents, including PDFs, Word files (.doc and .docx), text files (.txt), and audio documents. The user interface for this script is built using the Streamlit library, allowing users to input the file path and a custom prompt for summarization.
+Welcome to the MedGPT Bot repository! This project contains a Python script appStreamlit.py, that harnesses the power of natural language processing to summarize various types of documents, including PDFs, Word files (.doc and .docx), text files (.txt), and audio documents. The user interface for this script is built using the Streamlit library, allowing users to input the file path and a custom prompt for summarization.
 
-Try it out: [MedGPT Bot Web Interface](https://medgpt-raq-bot.streamlit.app/)
+https://medgpt-raq-bot.streamlit.app/
+
+----
 
 **Architecture Description**
 
+![MedGPT Architecture](https://github.com/harishahamed26/MedGPT/assets/36252984/dddf4bc1-6cdd-434d-b3ac-35f3dbc988a2)
+
+
 ![MedGPT Architecture Description](https://github.com/harishahamed26/MedGPT/assets/36252984/502a08de-e948-42ef-8bcb-18cd5f145357)
 
-**Getting Started**
+### Getting Started
 
 Before you can run this project locally, make sure you have Python installed on your machine. It's also recommended to create a virtual environment to manage project dependencies and avoid conflicts with other projects. Here are the steps to set up and run MedGPT Bot:
 
@@ -51,7 +51,7 @@ Before you can run this project locally, make sure you have Python installed on 
    streamlit run app.py
    ```
 
-**Necessary Packages**
+Necessary Packages
 
 You can install the necessary Python packages using the following command:
 
@@ -59,7 +59,7 @@ You can install the necessary Python packages using the following command:
 pip install -r requirements.txt
 ```
 
-**For Google Colab**
+For Google Colab
 
 If you plan to run this project on Google Colab, follow these additional steps:
 
