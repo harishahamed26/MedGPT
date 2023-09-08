@@ -15,6 +15,29 @@ https://medgpt-raq-bot.streamlit.app/
 
 ![MedGPT Architecture Description](https://github.com/harishahamed26/MedGPT/assets/36252984/502a08de-e948-42ef-8bcb-18cd5f145357)
 
+-----
+
+**Home Page of the MedGPT Bot**
+
+<img width="1440" alt="Homepage-MedGPT" src="https://github.com/harishahamed26/MedGPT/assets/36252984/871e3c50-2271-49fc-8825-e1b9eca0c459">
+
+
+-----
+
+**English Conversation of the MedGPT Bot**
+
+<img width="1440" alt="English-MedGPT" src="https://github.com/harishahamed26/MedGPT/assets/36252984/136cd070-3881-40fc-afe7-3476bcd9a871">
+
+
+-----
+
+**French Conversation of the MedGPT Bot**
+
+<img width="1440" alt="French-MedGPT" src="https://github.com/harishahamed26/MedGPT/assets/36252984/b7d2febb-63e6-4757-a37f-9df8bb0f5236">
+
+-----
+
+
 ### Getting Started
 
 Before you can run this project locally, make sure you have Python installed on your machine. It's also recommended to create a virtual environment to manage project dependencies and avoid conflicts with other projects. Here are the steps to set up and run MedGPT Bot:
