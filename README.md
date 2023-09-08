@@ -30,7 +30,7 @@ Before you can run this project locally, make sure you have Python installed on 
    pip install -r requirements.txt
    ```
 
-5. Execute the following command to download necessary NLTK data for text splitting:
+5. Execute the following command to download the necessary NLTK data for text splitting:
 
    ```
    python -m nltk.downloader all
