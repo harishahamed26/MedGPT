@@ -6,9 +6,10 @@
 
 **Description**
 
-Welcome to the MedGPT Bot repository! This project contains a Python script, `appStreamlit.py`, that harnesses the power of natural language processing to summarize various types of documents, including PDFs, Word files (`.doc` and `.docx`), text files (`.txt`), and audio documents. The user interface for this script is built using the Streamlit library, allowing users to input the file path and a custom prompt for summarization.
+Welcome to the MedGPT Bot repository! 
+This project contains a Python script, appStreamlit.py, that harnesses the power of natural language processing to summarize various types of documents, including PDFs, Word files (.doc and .docx), text files (.txt), and audio documents. The user interface for this script is built using the Streamlit library, allowing users to input the file path and a custom prompt for summarization.
 
-**Try it out: [MedGPT Bot Web Interface](https://medgpt-raq-bot.streamlit.app/)**
+Try it out: [MedGPT Bot Web Interface](https://medgpt-raq-bot.streamlit.app/)
 
 **Architecture Description**
 
