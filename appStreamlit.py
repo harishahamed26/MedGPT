@@ -26,12 +26,7 @@ import torch
 from transformers import SpeechT5HifiGan
 import nltk
 
-@st.cache
-processor = SpeechT5Processor.from_pretrained("microsoft/speecht5_tts")
-model = SpeechT5ForTextToSpeech.from_pretrained("microsoft/speecht5_tts")
-embeddings_dataset = load_dataset("Matthijs/cmu-arctic-xvectors", split="validation")
-speaker_embeddings = torch.tensor(embeddings_dataset[7306]["xvector"]).unsqueeze(0)
-vocoder = SpeechT5HifiGan.from_pretrained("microsoft/speecht5_hifigan")
+
 st.session_state.ConvoHistory = None
 
 #load_dotenv()
@@ -193,7 +188,7 @@ def Process_LLM(VectorStorage):
     return Conversational_Chain
 
 # Creating fucntion for connversation session
-def ConvoPlace(queries, ConversationModel, target_language):
+def ConvoPlace(queries, ConversationModel, target_language, processor, model, speaker_embeddings, vocoder):
     source_language='English'
     response = ConversationModel({'query': queries})
     
@@ -261,12 +256,20 @@ def ConvoPlace(queries, ConversationModel, target_language):
       st.header('Last Response generated')
       st.audio(speech.numpy(), sample_rate = SampleRate)
             #st.audio(speech.numpy(), sample_rate = SampleRate)
-    
+@st.cache
+def load_model():
+    processor = SpeechT5Processor.from_pretrained("microsoft/speecht5_tts")
+    model = SpeechT5ForTextToSpeech.from_pretrained("microsoft/speecht5_tts")
+    embeddings_dataset = load_dataset("Matthijs/cmu-arctic-xvectors", split="validation")
+    speaker_embeddings = torch.tensor(embeddings_dataset[7306]["xvector"]).unsqueeze(0)
+    vocoder = SpeechT5HifiGan.from_pretrained("microsoft/speecht5_hifigan")
+    return processor, model, speaker_embeddings, vocoder
 
 def main():
     st.set_page_config(page_title = 'MedGPT', page_icon='📚', layout='wide')
     st.header('MedGPT Chatbot 🤖')
     st.write(css, unsafe_allow_html = True)
+    processor, model, speaker_embeddings, vocoder = load_model()
     whisper = pipeline("automatic-speech-recognition", model="openai/whisper-tiny")
 
     # Style.css to remove footer and make some css changes
@@ -328,13 +331,13 @@ def main():
       
         
     if Recording is not None:  
-      ConvoPlace(whisper(Recording)['text'], st.session_state.ConversationModel, target_language)
+      ConvoPlace(whisper(Recording)['text'], st.session_state.ConversationModel, target_language, processor, model, speaker_embeddings, vocoder)
 
     queries = st.chat_input(placeholder = 'Ask about your document')
     
     
     if queries:
-      ConvoPlace(queries, st.session_state.ConversationModel, target_language)
+      ConvoPlace(queries, st.session_state.ConversationModel, target_language, processor, model, speaker_embeddings, vocoder)
       
     
     
