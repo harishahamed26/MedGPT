@@ -26,7 +26,7 @@ import torch
 from transformers import SpeechT5HifiGan
 import nltk
 
-
+@st.cache
 processor = SpeechT5Processor.from_pretrained("microsoft/speecht5_tts")
 model = SpeechT5ForTextToSpeech.from_pretrained("microsoft/speecht5_tts")
 embeddings_dataset = load_dataset("Matthijs/cmu-arctic-xvectors", split="validation")
