@@ -26,7 +26,6 @@ import torch
 from transformers import SpeechT5HifiGan
 import nltk
 
-nltk.downloader()
 
 processor = SpeechT5Processor.from_pretrained("microsoft/speecht5_tts")
 model = SpeechT5ForTextToSpeech.from_pretrained("microsoft/speecht5_tts")
