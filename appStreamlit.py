@@ -35,7 +35,7 @@ vocoder = SpeechT5HifiGan.from_pretrained("microsoft/speecht5_hifigan")
 st.session_state.ConvoHistory = None
 
 #load_dotenv()
-my_secret_key = st.secrets["OPENAI_API_KEY"]
+#my_secret_key = st.secrets["OPENAI_API_KEY"]
 #my_secret_key = os.getenv("OPENAI_API_KEY")
 SampleRate = 16000
 
