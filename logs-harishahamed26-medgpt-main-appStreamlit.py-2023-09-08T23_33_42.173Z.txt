@@ -1,1328 +1,0 @@
-
-[     UTC     ] Logs for medgpt-raq-bot.streamlit.app/
-────────────────────────────────────────────────────────────────────────────────────────
-[20:47:01] 🚀 Starting up repository: 'medgpt', branch: 'main', main module: 'appStreamlit.py'
-[20:47:01] 🐙 Cloning repository...
-[20:47:02] 🐙 Cloning into '/app/medgpt'...
-
-[20:47:02] 🐙 Cloned repository!
-[20:47:02] 🐙 Pulling code changes from Github...
-[20:47:04] 📦 Processing dependencies...
-
-──────────────────────────────────────── pip ───────────────────────────────────────────
-
-Collecting streamlit
-  Downloading streamlit-1.26.0-py2.py3-none-any.whl (8.1 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.1/8.1 MB 118.9 MB/s eta 0:00:00[2023-09-08 20:47:04.858476] 
-Collecting openai
-  Downloading openai-0.28.0-py3-none-any.whl (76 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 76.5/76.5 KB 188.6 MB/s eta 0:00:00[2023-09-08 20:47:04.915877] 
-Collecting tiktoken
-  Downloading tiktoken-0.4.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.7 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 271.2 MB/s eta 0:00:00[2023-09-08 20:47:04.992029] 
-Collecting langchain
-  Downloading langchain-0.0.285-py3-none-any.whl (1.7 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 175.4 MB/s eta 0:00:00[2023-09-08 20:47:05.212465] 
-Collecting nltk
-  Downloading nltk-3.8.1-py3-none-any.whl (1.5 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 263.4 MB/s eta 0:00:00[2023-09-08 20:47:05.276480] 
-Collecting python-docx
-  Downloading python-docx-0.8.11.tar.gz (5.6 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.6/5.6 MB 273.8 MB/s eta 0:00:00[2023-09-08 20:47:05.334742] 
-  Preparing metadata (setup.py): started
-  Preparing metadata (setup.py): finished with status 'done'
-Collecting python-dotenv
-  Downloading python_dotenv-1.0.0-py3-none-any.whl (19 kB)
-Collecting PyPDF2
-  Downloading pypdf2-3.0.1-py3-none-any.whl (232 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 232.6/232.6 KB 186.1 MB/s eta 0:00:00[2023-09-08 20:47:05.985185] 
-Collecting faiss-cpu
-  Downloading faiss_cpu-1.7.4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.6 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.6/17.6 MB 200.8 MB/s eta 0:00:00[2023-09-08 20:47:06.167351] 
-Collecting audio-recorder-streamlit
-  Downloading audio_recorder_streamlit-0.0.8-py3-none-any.whl (1.2 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 274.5 MB/s eta 0:00:00[2023-09-08 20:47:06.227757] 
-Collecting SpeechRecognition
-  Downloading SpeechRecognition-3.10.0-py2.py3-none-any.whl (32.8 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 32.8/32.8 MB 201.2 MB/s eta 0:00:00[2023-09-08 20:47:06.432924] 
-Collecting transformers
-  Downloading transformers-4.33.1-py3-none-any.whl (7.6 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.6/7.6 MB 220.7 MB/s eta 0:00:00[2023-09-08 20:47:06.592658] 
-Collecting sentencepiece
-  Downloading sentencepiece-0.1.99-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.3 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 219.4 MB/s eta 0:00:00[2023-09-08 20:47:06.761048] 
-Collecting datasets
-  Downloading datasets-2.14.5-py3-none-any.whl (519 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 519.6/519.6 KB 145.9 MB/s eta 0:00:00[2023-09-08 20:47:06.835528] 
-Collecting torch
-  Downloading torch-2.0.1-cp39-cp39-manylinux1_x86_64.whl (619.9 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 619.9/619.9 MB 268.9 MB/s eta 0:00:00[2023-09-08 20:47:09.711881] 
-Collecting gitpython!=3.1.19,<4,>=3.0.7
-  Downloading GitPython-3.1.35-py3-none-any.whl (188 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 188.8/188.8 KB 239.8 MB/s eta 0:00:00[2023-09-08 20:47:10.441952] 
-Collecting pympler<2,>=0.9
-  Downloading Pympler-1.0.1-py3-none-any.whl (164 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 164.8/164.8 KB 243.9 MB/s eta 0:00:00[2023-09-08 20:47:10.478788] 
-Collecting numpy<2,>=1.19.3
-  Downloading numpy-1.25.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.3 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.3/18.3 MB 237.3 MB/s eta 0:00:00[2023-09-08 20:47:11.011300] 
-Collecting validators<1,>=0.2
-  Downloading validators-0.22.0-py3-none-any.whl (26 kB)
-Collecting requests<3,>=2.18
-  Downloading requests-2.31.0-py3-none-any.whl (62 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.6/62.6 KB 167.2 MB/s eta 0:00:00[2023-09-08 20:47:11.140133] 
-Collecting altair<6,>=4.0
-  Downloading altair-5.1.1-py3-none-any.whl (520 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 520.6/520.6 KB 263.3 MB/s eta 0:00:00[2023-09-08 20:47:11.187393] 
-Collecting tenacity<9,>=8.1.0
-  Downloading tenacity-8.2.3-py3-none-any.whl (24 kB)
-Collecting protobuf<5,>=3.20
-  Downloading protobuf-4.24.3-cp37-abi3-manylinux2014_x86_64.whl (311 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 311.6/311.6 KB 247.6 MB/s eta 0:00:00[2023-09-08 20:47:11.614788] 
-Collecting pyarrow>=6.0
-  Downloading pyarrow-13.0.0-cp39-cp39-manylinux_2_28_x86_64.whl (40.1 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.1/40.1 MB 209.9 MB/s eta 0:00:00
-Collecting pillow<10,>=7.1.0
-  Downloading Pillow-9.5.0-cp39-cp39-manylinux_2_28_x86_64.whl (3.4 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.4/3.4 MB 270.7 MB/s eta 0:00:00[2023-09-08 20:47:12.421667] 
-Collecting cachetools<6,>=4.0
-  Downloading cachetools-5.3.1-py3-none-any.whl (9.3 kB)
-Collecting packaging<24,>=16.8
-  Downloading packaging-23.1-py3-none-any.whl (48 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.9/48.9 KB 130.6 MB/s eta 0:00:00[2023-09-08 20:47:12.544528] 
-Collecting toml<2,>=0.10.1
-  Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
-Collecting click<9,>=7.0
-  Downloading click-8.1.7-py3-none-any.whl (97 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 97.9/97.9 KB 199.7 MB/s eta 0:00:00[2023-09-08 20:47:12.628208] 
-Collecting blinker<2,>=1.0.0
-  Downloading blinker-1.6.2-py3-none-any.whl (13 kB)
-Collecting pandas<3,>=1.3.0
-  Downloading pandas-2.1.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.7 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.7/12.7 MB 167.0 MB/s eta 0:00:00[2023-09-08 20:47:13.019198] 
-Collecting rich<14,>=10.14.0
-  Downloading rich-13.5.2-py3-none-any.whl (239 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 239.7/239.7 KB 230.6 MB/s eta 0:00:00[2023-09-08 20:47:13.167679] 
-Collecting tzlocal<5,>=1.1
-  Downloading tzlocal-4.3.1-py3-none-any.whl (20 kB)
-Collecting tornado<7,>=6.0.3
-  Downloading tornado-6.3.3-cp38-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (427 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 427.7/427.7 KB 254.6 MB/s eta 0:00:00[2023-09-08 20:47:13.306042] 
-Collecting importlib-metadata<7,>=1.4
-  Downloading importlib_metadata-6.8.0-py3-none-any.whl (22 kB)
-Collecting typing-extensions<5,>=4.1.0
-  Downloading typing_extensions-4.7.1-py3-none-any.whl (33 kB)
-Collecting python-dateutil<3,>=2.7.3
-  Downloading python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 247.7/247.7 KB 252.8 MB/s eta 0:00:00[2023-09-08 20:47:13.493211] 
-Collecting watchdog>=2.1.5
-  Downloading watchdog-3.0.0-py3-none-manylinux2014_x86_64.whl (82 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 82.1/82.1 KB 205.4 MB/s eta 0:00:00[2023-09-08 20:47:13.601673] 
-Collecting pydeck<1,>=0.8
-  Downloading pydeck-0.8.0-py2.py3-none-any.whl (4.7 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.7/4.7 MB 240.5 MB/s eta 0:00:00[2023-09-08 20:47:13.666668] 
-Collecting aiohttp
-  Downloading aiohttp-3.8.5-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.1 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 240.7 MB/s eta 0:00:00[2023-09-08 20:47:14.221823] 
-Collecting tqdm
-  Downloading tqdm-4.66.1-py3-none-any.whl (78 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.3/78.3 KB 154.3 MB/s eta 0:00:00[2023-09-08 20:47:14.328947] 
-Collecting regex>=2022.1.18
-  Downloading regex-2023.8.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (771 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 771.4/771.4 KB 154.0 MB/s eta 0:00:00[2023-09-08 20:47:15.180948] 
-Collecting numexpr<3.0.0,>=2.8.4
-  Downloading numexpr-2.8.5-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (382 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 382.8/382.8 KB 136.9 MB/s eta 0:00:00[2023-09-08 20:47:15.486596] 
-Collecting PyYAML>=5.3
-  Downloading PyYAML-6.0.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (738 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 738.9/738.9 KB 240.6 MB/s eta 0:00:00[2023-09-08 20:47:15.609424] 
-Collecting dataclasses-json<0.6.0,>=0.5.7
-  Downloading dataclasses_json-0.5.14-py3-none-any.whl (26 kB)
-Collecting langsmith<0.1.0,>=0.0.21
-  Downloading langsmith-0.0.35-py3-none-any.whl (37 kB)
-Collecting async-timeout<5.0.0,>=4.0.0
-  Downloading async_timeout-4.0.3-py3-none-any.whl (5.7 kB)
-Collecting SQLAlchemy<3,>=1.4
-  Downloading SQLAlchemy-2.0.20-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.0 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.0/3.0 MB 256.0 MB/s eta 0:00:00[2023-09-08 20:47:16.566013] 
-Collecting pydantic<3,>=1
-  Downloading pydantic-2.3.0-py3-none-any.whl (374 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 374.5/374.5 KB 256.9 MB/s eta 0:00:00[2023-09-08 20:47:16.863575] 
-Collecting joblib
-  Downloading joblib-1.3.2-py3-none-any.whl (302 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 302.2/302.2 KB 242.6 MB/s eta 0:00:00[2023-09-08 20:47:16.970271] 
-Collecting lxml>=2.3.2
-  Downloading lxml-4.9.3-cp39-cp39-manylinux_2_28_x86_64.whl (8.0 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.0/8.0 MB 224.5 MB/s eta 0:00:00[2023-09-08 20:47:17.354611] 
-Collecting tokenizers!=0.11.3,<0.14,>=0.11.1
-  Downloading tokenizers-0.13.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (7.8 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.8/7.8 MB 254.5 MB/s eta 0:00:00[2023-09-08 20:47:18.163028] 
-Collecting huggingface-hub<1.0,>=0.15.1
-  Downloading huggingface_hub-0.16.4-py3-none-any.whl (268 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 268.8/268.8 KB 249.6 MB/s eta 0:00:00[2023-09-08 20:47:18.275824] 
-Collecting filelock
-  Downloading filelock-3.12.3-py3-none-any.whl (11 kB)
-Collecting safetensors>=0.3.1
-  Downloading safetensors-0.3.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.3 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 264.5 MB/s eta 0:00:00[2023-09-08 20:47:18.553934] 
-Collecting dill<0.3.8,>=0.3.0
-  Downloading dill-0.3.7-py3-none-any.whl (115 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 115.3/115.3 KB 234.7 MB/s eta 0:00:00[2023-09-08 20:47:18.740742] 
-Collecting multiprocess
-  Downloading multiprocess-0.70.15-py39-none-any.whl (133 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.3/133.3 KB 235.0 MB/s eta 0:00:00[2023-09-08 20:47:18.797432] 
-Collecting fsspec[http]<2023.9.0,>=2023.1.0
-  Downloading fsspec-2023.6.0-py3-none-any.whl (163 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 163.8/163.8 KB 217.0 MB/s eta 0:00:00[2023-09-08 20:47:18.868248] 
-Collecting xxhash
-  Downloading xxhash-3.3.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (193 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 193.8/193.8 KB 230.9 MB/s eta 0:00:00[2023-09-08 20:47:19.055865] 
-Collecting nvidia-cusparse-cu11==11.7.4.91
-  Downloading nvidia_cusparse_cu11-11.7.4.91-py3-none-manylinux1_x86_64.whl (173.2 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 173.2/173.2 MB 161.3 MB/s eta 0:00:00[2023-09-08 20:47:19.992606] 
-Collecting nvidia-cuda-cupti-cu11==11.7.101
-  Downloading nvidia_cuda_cupti_cu11-11.7.101-py3-none-manylinux1_x86_64.whl (11.8 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.8/11.8 MB 233.0 MB/s eta 0:00:00[2023-09-08 20:47:20.229273] 
-Collecting triton==2.0.0
-  Downloading triton-2.0.0-1-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (63.3 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.3/63.3 MB 214.0 MB/s eta 0:00:00[2023-09-08 20:47:20.626764] 
-Collecting nvidia-cudnn-cu11==8.5.0.96
-  Downloading nvidia_cudnn_cu11-8.5.0.96-2-py3-none-manylinux1_x86_64.whl (557.1 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 557.1/557.1 MB 225.3 MB/s eta 0:00:00[2023-09-08 20:47:23.452369] 
-Collecting nvidia-cublas-cu11==11.10.3.66
-  Downloading nvidia_cublas_cu11-11.10.3.66-py3-none-manylinux1_x86_64.whl (317.1 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 317.1/317.1 MB 231.5 MB/s eta 0:00:00[2023-09-08 20:47:25.348718] 
-Collecting nvidia-nccl-cu11==2.14.3
-  Downloading nvidia_nccl_cu11-2.14.3-py3-none-manylinux1_x86_64.whl (177.1 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 177.1/177.1 MB 160.2 MB/s eta 0:00:00[2023-09-08 20:47:26.546948] 
-Collecting sympy
-  Downloading sympy-1.12-py3-none-any.whl (5.7 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.7/5.7 MB 228.3 MB/s eta 0:00:00[2023-09-08 20:47:26.780757] 
-Collecting jinja2
-  Downloading Jinja2-3.1.2-py3-none-any.whl (133 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.1/133.1 KB 215.1 MB/s eta 0:00:00[2023-09-08 20:47:26.841795] 
-Collecting nvidia-nvtx-cu11==11.7.91
-  Downloading nvidia_nvtx_cu11-11.7.91-py3-none-manylinux1_x86_64.whl (98 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.6/98.6 KB 215.9 MB/s eta 0:00:00[2023-09-08 20:47:26.873901] 
-Collecting nvidia-cufft-cu11==10.9.0.58
-  Downloading nvidia_cufft_cu11-10.9.0.58-py3-none-manylinux1_x86_64.whl (168.4 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 168.4/168.4 MB 213.8 MB/s eta 0:00:00[2023-09-08 20:47:27.739513] 
-Collecting nvidia-cusolver-cu11==11.4.0.1
-  Downloading nvidia_cusolver_cu11-11.4.0.1-2-py3-none-manylinux1_x86_64.whl (102.6 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 102.6/102.6 MB 221.0 MB/s eta 0:00:00[2023-09-08 20:47:28.418483] 
-Collecting nvidia-cuda-runtime-cu11==11.7.99
-  Downloading nvidia_cuda_runtime_cu11-11.7.99-py3-none-manylinux1_x86_64.whl (849 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 849.3/849.3 KB 193.4 MB/s eta 0:00:00[2023-09-08 20:47:28.548477] 
-Collecting nvidia-curand-cu11==10.2.10.91
-  Downloading nvidia_curand_cu11-10.2.10.91-py3-none-manylinux1_x86_64.whl (54.6 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.6/54.6 MB 232.1 MB/s eta 0:00:00[2023-09-08 20:47:28.846844] 
-Collecting networkx
-  Downloading networkx-3.1-py3-none-any.whl (2.1 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 93.4 MB/s eta 0:00:00[2023-09-08 20:47:28.980430] 
-Collecting nvidia-cuda-nvrtc-cu11==11.7.99
-  Downloading nvidia_cuda_nvrtc_cu11-11.7.99-2-py3-none-manylinux1_x86_64.whl (21.0 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 21.0/21.0 MB 216.7 MB/s eta 0:00:00[2023-09-08 20:47:29.122821] 
-Collecting setuptools
-  Downloading setuptools-68.2.0-py3-none-any.whl (807 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 807.8/807.8 KB 274.9 MB/s eta 0:00:00[2023-09-08 20:47:29.466980] 
-Collecting wheel
-  Downloading wheel-0.41.2-py3-none-any.whl (64 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 64.8/64.8 KB 60.4 MB/s eta 0:00:00[2023-09-08 20:47:29.533470] 
-Collecting lit
-  Downloading lit-16.0.6.tar.gz (153 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 153.7/153.7 KB 232.4 MB/s eta 0:00:00[2023-09-08 20:47:29.617005] 
-  Installing build dependencies: started
-  Installing build dependencies: finished with status 'done'
-  Getting requirements to build wheel: started
-  Getting requirements to build wheel: finished with status 'done'
-  Installing backend dependencies: started
-  Installing backend dependencies: finished with status 'done'
-  Preparing metadata (pyproject.toml): started
-  Preparing metadata (pyproject.toml): finished with status 'done'
-Collecting cmake
-  Downloading cmake-3.27.4.1-py2.py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (26.1 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 26.1/26.1 MB 210.7 MB/s eta 0:00:00[2023-09-08 20:47:36.904485] 
-Collecting frozenlist>=1.1.1
-  Downloading frozenlist-1.4.0-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (228 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 228.0/228.0 KB 235.1 MB/s eta 0:00:00[2023-09-08 20:47:37.106221] 
-Collecting aiosignal>=1.1.2
-  Downloading aiosignal-1.3.1-py3-none-any.whl (7.6 kB)
-Collecting attrs>=17.3.0
-  Downloading attrs-23.1.0-py3-none-any.whl (61 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.2/61.2 KB 209.8 MB/s eta 0:00:00[2023-09-08 20:47:37.193288] 
-Collecting yarl<2.0,>=1.0
-  Downloading yarl-1.9.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (269 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 269.4/269.4 KB 250.2 MB/s eta 0:00:00[2023-09-08 20:47:37.480280] 
-Collecting multidict<7.0,>=4.5
-  Downloading multidict-6.0.4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (114 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 114.2/114.2 KB 204.8 MB/s eta 0:00:00[2023-09-08 20:47:38.007200] 
-Collecting charset-normalizer<4.0,>=2.0
-  Downloading charset_normalizer-3.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (202 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 202.1/202.1 KB 228.9 MB/s eta 0:00:00[2023-09-08 20:47:38.154045] 
-Collecting jsonschema>=3.0
-  Downloading jsonschema-4.19.0-py3-none-any.whl (83 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 83.4/83.4 KB 202.2 MB/s eta 0:00:00[2023-09-08 20:47:38.257765] 
-Collecting toolz
-  Downloading toolz-0.12.0-py3-none-any.whl (55 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 55.8/55.8 KB 167.9 MB/s eta 0:00:00[2023-09-08 20:47:38.298728] 
-Collecting marshmallow<4.0.0,>=3.18.0
-  Downloading marshmallow-3.20.1-py3-none-any.whl (49 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.4/49.4 KB 155.2 MB/s eta 0:00:00[2023-09-08 20:47:38.430919] 
-Collecting typing-inspect<1,>=0.4.0
-  Downloading typing_inspect-0.9.0-py3-none-any.whl (8.8 kB)
-Collecting gitdb<5,>=4.0.1
-  Downloading gitdb-4.0.10-py3-none-any.whl (62 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.7/62.7 KB 211.1 MB/s eta 0:00:00[2023-09-08 20:47:38.578894] 
-Collecting zipp>=0.5
-  Downloading zipp-3.16.2-py3-none-any.whl (7.2 kB)
-Collecting tzdata>=2022.1
-  Downloading tzdata-2023.3-py2.py3-none-any.whl (341 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 341.8/341.8 KB 173.8 MB/s eta 0:00:00[2023-09-08 20:47:38.935168] 
-Collecting pytz>=2020.1
-  Downloading pytz-2023.3.post1-py2.py3-none-any.whl (502 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 502.5/502.5 KB 271.2 MB/s eta 0:00:00[2023-09-08 20:47:39.035420] 
-Collecting pydantic-core==2.6.3
-  Downloading pydantic_core-2.6.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.9 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.9/1.9 MB 176.8 MB/s eta 0:00:00[2023-09-08 20:47:40.188165] 
-Collecting annotated-types>=0.4.0
-  Downloading annotated_types-0.5.0-py3-none-any.whl (11 kB)
-Collecting MarkupSafe>=2.0
-  Downloading MarkupSafe-2.1.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (25 kB)
-Collecting six>=1.5
-  Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
-Collecting idna<4,>=2.5
-  Downloading idna-3.4-py3-none-any.whl (61 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.5/61.5 KB 170.6 MB/s eta 0:00:00[2023-09-08 20:47:40.505671] 
-Collecting urllib3<3,>=1.21.1
-  Downloading urllib3-2.0.4-py3-none-any.whl (123 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 123.9/123.9 KB 224.4 MB/s eta 0:00:00[2023-09-08 20:47:40.585747] 
-Collecting certifi>=2017.4.17
-  Downloading certifi-2023.7.22-py3-none-any.whl (158 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 158.3/158.3 KB 228.4 MB/s eta 0:00:00[2023-09-08 20:47:40.636741] 
-Collecting markdown-it-py>=2.2.0
-  Downloading markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.5/87.5 KB 211.1 MB/s eta 0:00:00[2023-09-08 20:47:40.699513] 
-Collecting pygments<3.0.0,>=2.13.0
-  Downloading Pygments-2.16.1-py3-none-any.whl (1.2 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 285.8 MB/s eta 0:00:00[2023-09-08 20:47:40.763920] 
-Collecting greenlet!=0.4.17
-  Downloading greenlet-2.0.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (610 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 610.9/610.9 KB 148.2 MB/s eta 0:00:00
-Collecting pytz-deprecation-shim
-  Downloading pytz_deprecation_shim-0.1.0.post0-py2.py3-none-any.whl (15 kB)
-Collecting mpmath>=0.19
-  Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 KB 38.7 MB/s eta 0:00:00[2023-09-08 20:47:41.515237] 
-Collecting smmap<6,>=3.0.1
-  Downloading smmap-5.0.0-py3-none-any.whl (24 kB)
-Collecting rpds-py>=0.7.1
-  Downloading rpds_py-0.10.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.2 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 249.4 MB/s eta 0:00:00[2023-09-08 20:47:42.069478] 
-Collecting referencing>=0.28.4
-  Downloading referencing-0.30.2-py3-none-any.whl (25 kB)
-Collecting jsonschema-specifications>=2023.03.6
-  Downloading jsonschema_specifications-2023.7.1-py3-none-any.whl (17 kB)
-Collecting mdurl~=0.1
-  Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
-Collecting mypy-extensions>=0.3.0
-  Downloading mypy_extensions-1.0.0-py3-none-any.whl (4.7 kB)
-Building wheels for collected packages: python-docx, lit
-  Building wheel for python-docx (setup.py): started
-  Building wheel for python-docx (setup.py): finished with status 'done'
-  Created wheel for python-docx: filename=python_docx-0.8.11-py3-none-any.whl size=184491 sha256=b826dc2d8c750679bcd80ee1657b187983517c7b502eaea44f91ebc9b099c98d
-  Stored in directory: /tmp/pip-ephem-wheel-cache-8700qrxy/wheels/83/8b/7c/09ae60c42c7ba4ed2dddaf2b8b9186cb105255856d6ed3dba5
-  Building wheel for lit (pyproject.toml): started
-  Building wheel for lit (pyproject.toml): finished with status 'done'
-  Created wheel for lit: filename=lit-16.0.6-py3-none-any.whl size=93584 sha256=668f978711abbd4cc9854c643a938d5e68f786a0db0a2c050f16cb820f5e036a
-  Stored in directory: /tmp/pip-ephem-wheel-cache-8700qrxy/wheels/a5/36/d6/cac2e6fb891889b33a548f2fddb8b4b7726399aaa2ed32b188
-Successfully built python-docx lit
-Installing collected packages: tokenizers, sentencepiece, safetensors, pytz, mpmath, lit, faiss-cpu, cmake, zipp, xxhash, wheel, watchdog, validators, urllib3, tzdata, typing-extensions, tqdm, tornado, toolz, toml, tenacity, sympy, smmap, six, setuptools, rpds-py, regex, PyYAML, python-dotenv, pympler, pygments, protobuf, pillow, packaging, nvidia-nccl-cu11, nvidia-cufft-cu11, nvidia-cuda-nvrtc-cu11, numpy, networkx, mypy-extensions, multidict, mdurl, MarkupSafe, lxml, joblib, idna, greenlet, fsspec, frozenlist, dill, click, charset-normalizer, certifi, cachetools, blinker, attrs, async-timeout, annotated-types, yarl, typing-inspect, SQLAlchemy, requests, referencing, pytz-deprecation-shim, python-docx, python-dateutil, PyPDF2, pydantic-core, pyarrow, nvidia-nvtx-cu11, nvidia-cusparse-cu11, nvidia-curand-cu11, nvidia-cuda-runtime-cu11, nvidia-cuda-cupti-cu11, nvidia-cublas-cu11, numexpr, nltk, multiprocess, marshmallow, markdown-it-py, jinja2, importlib-metadata, gitdb, filelock, aiosignal, tzlocal, tiktoken, SpeechRecognition, rich, pydeck, pydantic, pandas, nvidia-cusolver-cu11, nvidia-cudnn-cu11, jsonschema-specifications, huggingface-hub, gitpython, dataclasses-json, aiohttp, transformers, openai, langsmith, jsonschema, langchain, datasets, altair, streamlit, audio-recorder-streamlit, triton, torch
-  Attempting uninstall: wheel
-    Found existing installation: wheel 0.40.0
-    Uninstalling wheel-0.40.0:
-      Successfully uninstalled wheel-0.40.0
-  Attempting uninstall: setuptools
-    Found existing installation: setuptools 67.8.0
-    Uninstalling setuptools-67.8.0:
-      Successfully uninstalled setuptools-67.8.0
-Successfully installed MarkupSafe-2.1.3 PyPDF2-3.0.1 PyYAML-6.0.1 SQLAlchemy-2.0.20 SpeechRecognition-3.10.0 aiohttp-3.8.5 aiosignal-1.3.1 altair-5.1.1 annotated-types-0.5.0 async-timeout-4.0.3 attrs-23.1.0 audio-recorder-streamlit-0.0.8 blinker-1.6.2 cachetools-5.3.1 certifi-2023.7.22 charset-normalizer-3.2.0 click-8.1.7 cmake-3.27.4.1 dataclasses-json-0.5.14 datasets-2.14.5 dill-0.3.7 faiss-cpu-1.7.4 filelock-3.12.3 frozenlist-1.4.0 fsspec-2023.6.0 gitdb-4.0.10 gitpython-3.1.35 greenlet-2.0.2 huggingface-hub-0.16.4 idna-3.4 importlib-metadata-6.8.0 jinja2-3.1.2 joblib-1.3.2 jsonschema-4.19.0 jsonschema-specifications-2023.7.1 langchain-0.0.285 langsmith-0.0.35 lit-16.0.6 lxml-4.9.3 markdown-it-py-3.0.0 marshmallow-3.20.1 mdurl-0.1.2 mpmath-1.3.0 multidict-6.0.4 multiprocess-0.70.15 mypy-extensions-1.0.0 networkx-3.1 nltk-3.8.1 numexpr-2.8.5 numpy-1.25.2 nvidia-cublas-cu11-11.10.3.66 nvidia-cuda-cupti-cu11-11.7.101 nvidia-cuda-nvrtc-cu11-11.7.99 nvidia-cuda-runtime-cu11-11.7.99 nvidia-cudnn-cu11-8.5.0.96 nvidia-cufft-cu11-10.9.0.58 nvidia-curand-cu11-10.2.10.91 nvidia-cusolver-cu11-11.4.0.1 nvidia-cusparse-cu11-11.7.4.91 nvidia-nccl-cu11-2.14.3 nvidia-nvtx-cu11-11.7.91 openai-0.28.0 packaging-23.1 pandas-2.1.0 pillow-9.5.0 protobuf-4.24.3 pyarrow-13.0.0 pydantic-2.3.0 pydantic-core-2.6.3 pydeck-0.8.0 pygments-2.16.1 pympler-1.0.1 python-dateutil-2.8.2 python-docx-0.8.11 python-dotenv-1.0.0 pytz-2023.3.post1 pytz-deprecation-shim-0.1.0.post0 referencing-0.30.2 regex-2023.8.8 requests-2.31.0 rich-13.5.2 rpds-py-0.10.2 safetensors-0.3.3 sentencepiece-0.1.99 setuptools-68.2.0 six-1.16.0 smmap-5.0.0 streamlit-1.26.0 sympy-1.12 tenacity-8.2.3 tiktoken-0.4.0 tokenizers-0.13.3 toml-0.10.2 toolz-0.12.0 torch-2.0.1 tornado-6.3.3 tqdm-4.66.1 transformers-4.33.1 triton-2.0.0 typing-extensions-4.7.1 typing-inspect-0.9.0 tzdata-2023.3 tzlocal-4.3.1 urllib3-2.0.4 validators-0.22.0 watchdog-3.0.0 wheel-0.41.2 xxhash-3.3.0 yarl-1.9.2 zipp-3.16.2
-WARNING: You are using pip version 22.0.3; however, version 23.2.1 is available.
-You should consider upgrading via the '/home/appuser/venv/bin/python -m pip install --upgrade pip' command.
-Checking if Streamlit is installed
-Found Streamlit version 1.26.0 in the environment
-
-────────────────────────────────────────────────────────────────────────────────────────
-
-[20:48:54] 🐍 Python dependencies were installed from /app/medgpt/requirements.txt using pip.
-Check if streamlit is installed
-Streamlit is already installed
-[20:48:56] 📦 Processed dependencies!
-
-Collecting usage statistics. To deactivate, set browser.gatherUsageStats to False.
-
-
-
-
-Downloading (…)rocessor_config.json:   0%|          | 0.00/433 [00:00<?, ?B/s][2023-09-08 20:49:20.650232] Downloading (…)rocessor_config.json: 100%|██████████| 433/433 [00:00<00:00, 94.1kB/s]
-Downloading spm_char.model:   0%|          | 0.00/238k [00:00<?, ?B/s][2023-09-08 20:49:20.914351] Downloading spm_char.model: 100%|██████████| 238k/238k [00:00<00:00, 10.3MB/s]
-Downloading (…)in/added_tokens.json:   0%|          | 0.00/40.0 [00:00<?, ?B/s][2023-09-08 20:49:21.073409] Downloading (…)in/added_tokens.json: 100%|██████████| 40.0/40.0 [00:00<00:00, 43.6kB/s]
-Downloading (…)cial_tokens_map.json:   0%|          | 0.00/234 [00:00<?, ?B/s][2023-09-08 20:49:21.234206] Downloading (…)cial_tokens_map.json: 100%|██████████| 234/234 [00:00<00:00, 249kB/s]
-Downloading (…)okenizer_config.json:   0%|          | 0.00/232 [00:00<?, ?B/s][2023-09-08 20:49:21.397104] Downloading (…)okenizer_config.json: 100%|██████████| 232/232 [00:00<00:00, 260kB/s]
-Downloading (…)lve/main/config.json:   0%|          | 0.00/2.06k [00:00<?, ?B/s][2023-09-08 20:49:21.564375] Downloading (…)lve/main/config.json: 100%|██████████| 2.06k/2.06k [00:00<00:00, 2.24MB/s]
-Downloading pytorch_model.bin:   0%|          | 0.00/585M [00:00<?, ?B/s][2023-09-08 20:49:22.034284] Downloading pytorch_model.bin:   5%|▌         | 31.5M/585M [00:00<00:02, 247MB/s][2023-09-08 20:49:22.135810] Downloading pytorch_model.bin:  11%|█         | 62.9M/585M [00:00<00:01, 281MB/s][2023-09-08 20:49:22.268522] Downloading pytorch_model.bin:  18%|█▊        | 105M/585M [00:00<00:01, 298MB/s] [2023-09-08 20:49:22.399068] Downloading pytorch_model.bin:  25%|██▌       | 147M/585M [00:00<00:01, 308MB/s][2023-09-08 20:49:22.528156] Downloading pytorch_model.bin:  32%|███▏      | 189M/585M [00:00<00:01, 314MB/s][2023-09-08 20:49:22.630122] Downloading pytorch_model.bin:  38%|███▊      | 220M/585M [00:00<00:01, 312MB/s][2023-09-08 20:49:22.731398] Downloading pytorch_model.bin:  43%|████▎     | 252M/585M [00:00<00:01, 312MB/s][2023-09-08 20:49:22.859893] Downloading pytorch_model.bin:  50%|█████     | 294M/585M [00:00<00:00, 317MB/s][2023-09-08 20:49:23.084779] Downloading pytorch_model.bin:  57%|█████▋    | 336M/585M [00:01<00:00, 256MB/s][2023-09-08 20:49:23.203350] Downloading pytorch_model.bin:  63%|██████▎   | 367M/585M [00:01<00:00, 259MB/s][2023-09-08 20:49:23.305229] Downloading pytorch_model.bin:  68%|██████▊   | 398M/585M [00:01<00:00, 271MB/s][2023-09-08 20:49:23.434112] Downloading pytorch_model.bin:  75%|███████▌  | 440M/585M [00:01<00:00, 287MB/s][2023-09-08 20:49:23.535293] Downloading pytorch_model.bin:  81%|████████  | 472M/585M [00:01<00:00, 293MB/s][2023-09-08 20:49:23.635579] Downloading pytorch_model.bin:  86%|████████▌ | 503M/585M [00:01<00:00, 299MB/s][2023-09-08 20:49:23.764856] Downloading pytorch_model.bin:  93%|█████████▎| 545M/585M [00:01<00:00, 307MB/s][2023-09-08 20:49:23.872589] Downloading pytorch_model.bin:  99%|█████████▊| 577M/585M [00:01<00:00, 303MB/s][2023-09-08 20:49:23.905766] Downloading pytorch_model.bin: 100%|██████████| 585M/585M [00:01<00:00, 293MB/s]
-Downloading builder script:   0%|          | 0.00/1.36k [00:00<?, ?B/s][2023-09-08 20:49:25.999726] Downloading builder script: 100%|██████████| 1.36k/1.36k [00:00<00:00, 8.46MB/s]
-Downloading readme:   0%|          | 0.00/1.01k [00:00<?, ?B/s][2023-09-08 20:49:26.417362] Downloading readme: 100%|██████████| 1.01k/1.01k [00:00<00:00, 7.26MB/s]
-Downloading data:   0%|          | 0.00/17.9M [00:00<?, ?B/s][2023-09-08 20:49:27.177641] Downloading data:  28%|██▊       | 5.04M/17.9M [00:00<00:00, 50.3MB/s][2023-09-08 20:49:27.277627] Downloading data:  68%|██████▊   | 12.3M/17.9M [00:00<00:00, 63.4MB/s][2023-09-08 20:49:27.353776] Downloading data: 100%|██████████| 17.9M/17.9M [00:00<00:00, 65.0MB/s]
-Generating validation split: 0 examples [00:00, ? examples/s][2023-09-08 20:49:28.614132] Generating validation split: 72 examples [00:00, 707.98 examples/s][2023-09-08 20:49:28.714623] Generating validation split: 166 examples [00:00, 841.49 examples/s][2023-09-08 20:49:28.816047] Generating validation split: 260 examples [00:00, 880.34 examples/s][2023-09-08 20:49:28.917176] Generating validation split: 355 examples [00:00, 903.51 examples/s][2023-09-08 20:49:29.018344] Generating validation split: 446 examples [00:00, 902.37 examples/s][2023-09-08 20:49:29.119425] Generating validation split: 541 examples [00:00, 915.01 examples/s][2023-09-08 20:49:29.220923] Generating validation split: 636 examples [00:00, 922.11 examples/s][2023-09-08 20:49:29.321632] Generating validation split: 731 examples [00:00, 928.80 examples/s][2023-09-08 20:49:29.422642] Generating validation split: 827 examples [00:00, 935.40 examples/s][2023-09-08 20:49:29.524251] Generating validation split: 923 examples [00:01, 938.23 examples/s][2023-09-08 20:49:29.705287] Generating validation split: 1049 examples [00:01, 831.41 examples/s][2023-09-08 20:49:29.806166] Generating validation split: 1146 examples [00:01, 865.18 examples/s][2023-09-08 20:49:29.908052] Generating validation split: 1244 examples [00:01, 891.62 examples/s][2023-09-08 20:49:30.008774] Generating validation split: 1339 examples [00:01, 906.09 examples/s][2023-09-08 20:49:30.110174] Generating validation split: 1436 examples [00:01, 920.78 examples/s][2023-09-08 20:49:30.212515] Generating validation split: 1531 examples [00:01, 922.69 examples/s][2023-09-08 20:49:30.363808] Generating validation split: 1669 examples [00:01, 918.90 examples/s][2023-09-08 20:49:30.464333] Generating validation split: 1764 examples [00:01, 925.66 examples/s][2023-09-08 20:49:30.565438] Generating validation split: 1860 examples [00:02, 932.34 examples/s][2023-09-08 20:49:30.665607] Generating validation split: 1955 examples [00:02, 936.91 examples/s][2023-09-08 20:49:30.842039] Generating validation split: 2097 examples [00:02, 881.97 examples/s][2023-09-08 20:49:30.942950] Generating validation split: 2194 examples [00:02, 902.10 examples/s][2023-09-08 20:49:31.043628] Generating validation split: 2291 examples [00:02, 918.38 examples/s][2023-09-08 20:49:31.145232] Generating validation split: 2390 examples [00:02, 933.76 examples/s][2023-09-08 20:49:31.245473] Generating validation split: 2488 examples [00:02, 946.01 examples/s][2023-09-08 20:49:31.396887] Generating validation split: 2628 examples [00:02, 938.01 examples/s][2023-09-08 20:49:31.498356] Generating validation split: 2726 examples [00:02, 945.41 examples/s][2023-09-08 20:49:31.599685] Generating validation split: 2822 examples [00:03, 945.97 examples/s][2023-09-08 20:49:31.701215] Generating validation split: 2918 examples [00:03, 945.78 examples/s][2023-09-08 20:49:31.865104] Generating validation split: 3048 examples [00:03, 885.83 examples/s][2023-09-08 20:49:31.967005] Generating validation split: 3144 examples [00:03, 900.27 examples/s][2023-09-08 20:49:32.068392] Generating validation split: 3242 examples [00:03, 918.11 examples/s][2023-09-08 20:49:32.169750] Generating validation split: 3340 examples [00:03, 931.79 examples/s][2023-09-08 20:49:32.270637] Generating validation split: 3437 examples [00:03, 940.11 examples/s][2023-09-08 20:49:32.372122] Generating validation split: 3535 examples [00:03, 947.52 examples/s][2023-09-08 20:49:32.523539] Generating validation split: 3677 examples [00:04, 943.92 examples/s][2023-09-08 20:49:32.624621] Generating validation split: 3775 examples [00:04, 950.81 examples/s][2023-09-08 20:49:32.726144] Generating validation split: 3873 examples [00:04, 954.94 examples/s][2023-09-08 20:49:32.889325] Generating validation split: 4000 examples [00:04, 886.24 examples/s][2023-09-08 20:49:32.990461] Generating validation split: 4093 examples [00:04, 894.57 examples/s][2023-09-08 20:49:33.091345] Generating validation split: 4189 examples [00:04, 909.80 examples/s][2023-09-08 20:49:33.192417] Generating validation split: 4286 examples [00:04, 923.68 examples/s][2023-09-08 20:49:33.293887] Generating validation split: 4384 examples [00:04, 935.91 examples/s][2023-09-08 20:49:33.395280] Generating validation split: 4482 examples [00:04, 944.79 examples/s][2023-09-08 20:49:33.496776] Generating validation split: 4581 examples [00:04, 953.24 examples/s][2023-09-08 20:49:33.647622] Generating validation split: 4724 examples [00:05, 951.51 examples/s][2023-09-08 20:49:33.798675] Generating validation split: 4866 examples [00:05, 947.46 examples/s][2023-09-08 20:49:33.973904] Generating validation split: 5000 examples [00:05, 879.85 examples/s][2023-09-08 20:49:34.074057] Generating validation split: 5095 examples [00:05, 895.74 examples/s][2023-09-08 20:49:34.174664] Generating validation split: 5190 examples [00:05, 907.95 examples/s][2023-09-08 20:49:34.276281] Generating validation split: 5285 examples [00:05, 915.07 examples/s][2023-09-08 20:49:34.377256] Generating validation split: 5381 examples [00:05, 924.84 examples/s][2023-09-08 20:49:34.479188] Generating validation split: 5480 examples [00:05, 937.95 examples/s][2023-09-08 20:49:34.580875] Generating validation split: 5576 examples [00:06, 939.59 examples/s][2023-09-08 20:49:34.681333] Generating validation split: 5671 examples [00:06, 941.42 examples/s][2023-09-08 20:49:34.782615] Generating validation split: 5768 examples [00:06, 946.26 examples/s][2023-09-08 20:49:34.884410] Generating validation split: 5866 examples [00:06, 951.06 examples/s][2023-09-08 20:49:34.985437] Generating validation split: 5962 examples [00:06, 950.93 examples/s][2023-09-08 20:49:35.154939] Generating validation split: 6095 examples [00:06, 881.94 examples/s][2023-09-08 20:49:35.256231] Generating validation split: 6189 examples [00:06, 894.02 examples/s][2023-09-08 20:49:35.356987] Generating validation split: 6282 examples [00:06, 901.72 examples/s][2023-09-08 20:49:35.458050] Generating validation split: 6377 examples [00:06, 912.41 examples/s][2023-09-08 20:49:35.559534] Generating validation split: 6471 examples [00:07, 916.46 examples/s][2023-09-08 20:49:35.661205] Generating validation split: 6565 examples [00:07, 918.87 examples/s][2023-09-08 20:49:35.812342] Generating validation split: 6685 examples [00:07, 871.13 examples/s][2023-09-08 20:49:35.913010] Generating validation split: 6778 examples [00:07, 885.14 examples/s][2023-09-08 20:49:36.013667] Generating validation split: 6873 examples [00:07, 901.29 examples/s][2023-09-08 20:49:36.114891] Generating validation split: 6965 examples [00:07, 903.61 examples/s][2023-09-08 20:49:36.287575] Generating validation split: 7095 examples [00:07, 842.06 examples/s][2023-09-08 20:49:36.389114] Generating validation split: 7189 examples [00:07, 863.38 examples/s][2023-09-08 20:49:36.489690] Generating validation split: 7283 examples [00:07, 882.30 examples/s][2023-09-08 20:49:36.641586] Generating validation split: 7414 examples [00:08, 875.21 examples/s][2023-09-08 20:49:36.793373] Generating validation split: 7526 examples [00:08, 828.05 examples/s][2023-09-08 20:49:36.895276] Generating validation split: 7618 examples [00:08, 846.53 examples/s][2023-09-08 20:49:36.996284] Generating validation split: 7709 examples [00:08, 860.55 examples/s][2023-09-08 20:49:37.097447] Generating validation split: 7807 examples [00:08, 889.83 examples/s][2023-09-08 20:49:37.198894] Generating validation split: 7905 examples [00:08, 911.34 examples/s][2023-09-08 20:49:37.256081] Generating validation split: 7931 examples [00:08, 907.06 examples/s]
-Downloading (…)lve/main/config.json:   0%|          | 0.00/636 [00:00<?, ?B/s][2023-09-08 20:49:37.427065] Downloading (…)lve/main/config.json: 100%|██████████| 636/636 [00:00<00:00, 195kB/s]
-Downloading pytorch_model.bin:   0%|          | 0.00/50.7M [00:00<?, ?B/s][2023-09-08 20:49:38.001074] Downloading pytorch_model.bin:  83%|████████▎ | 41.9M/50.7M [00:00<00:00, 322MB/s][2023-09-08 20:49:38.033152] Downloading pytorch_model.bin: 100%|██████████| 50.7M/50.7M [00:00<00:00, 312MB/s]
-Downloading (…)lve/main/config.json:   0%|          | 0.00/1.98k [00:00<?, ?B/s][2023-09-08 20:49:38.315385] Downloading (…)lve/main/config.json: 100%|██████████| 1.98k/1.98k [00:00<00:00, 2.17MB/s]
-Downloading model.safetensors:   0%|          | 0.00/151M [00:00<?, ?B/s][2023-09-08 20:49:38.576632] Downloading model.safetensors:  28%|██▊       | 41.9M/151M [00:00<00:00, 312MB/s][2023-09-08 20:49:38.701176] Downloading model.safetensors:  56%|█████▌    | 83.9M/151M [00:00<00:00, 326MB/s][2023-09-08 20:49:38.832405] Downloading model.safetensors:  83%|████████▎ | 126M/151M [00:00<00:00, 323MB/s] [2023-09-08 20:49:38.916813] Downloading model.safetensors: 100%|██████████| 151M/151M [00:00<00:00, 318MB/s]
-Downloading (…)neration_config.json:   0%|          | 0.00/3.72k [00:00<?, ?B/s][2023-09-08 20:49:39.519354] Downloading (…)neration_config.json: 100%|██████████| 3.72k/3.72k [00:00<00:00, 1.20MB/s]
-Downloading (…)okenizer_config.json:   0%|          | 0.00/805 [00:00<?, ?B/s][2023-09-08 20:49:39.684899] Downloading (…)okenizer_config.json: 100%|██████████| 805/805 [00:00<00:00, 912kB/s]
-Downloading (…)olve/main/vocab.json:   0%|          | 0.00/836k [00:00<?, ?B/s][2023-09-08 20:49:40.044182] Downloading (…)olve/main/vocab.json: 100%|██████████| 836k/836k [00:00<00:00, 4.44MB/s][2023-09-08 20:49:40.044776] Downloading (…)olve/main/vocab.json: 100%|██████████| 836k/836k [00:00<00:00, 4.42MB/s]
-Downloading (…)/main/tokenizer.json:   0%|          | 0.00/2.48M [00:00<?, ?B/s][2023-09-08 20:49:40.555219] Downloading (…)/main/tokenizer.json: 100%|██████████| 2.48M/2.48M [00:00<00:00, 10.2MB/s][2023-09-08 20:49:40.556752] Downloading (…)/main/tokenizer.json: 100%|██████████| 2.48M/2.48M [00:00<00:00, 10.1MB/s]
-Downloading (…)olve/main/merges.txt:   0%|          | 0.00/494k [00:00<?, ?B/s][2023-09-08 20:49:40.956527] Downloading (…)olve/main/merges.txt: 100%|██████████| 494k/494k [00:00<00:00, 4.29MB/s][2023-09-08 20:49:40.957001] Downloading (…)olve/main/merges.txt: 100%|██████████| 494k/494k [00:00<00:00, 4.26MB/s]
-Downloading (…)main/normalizer.json:   0%|          | 0.00/52.7k [00:00<?, ?B/s][2023-09-08 20:49:41.148164] Downloading (…)main/normalizer.json: 100%|██████████| 52.7k/52.7k [00:00<00:00, 45.2MB/s]
-Downloading (…)in/added_tokens.json:   0%|          | 0.00/34.6k [00:00<?, ?B/s][2023-09-08 20:49:41.310102] Downloading (…)in/added_tokens.json: 100%|██████████| 34.6k/34.6k [00:00<00:00, 35.0MB/s]
-Downloading (…)cial_tokens_map.json:   0%|          | 0.00/2.08k [00:00<?, ?B/s][2023-09-08 20:49:41.474358] Downloading (…)cial_tokens_map.json: 100%|██████████| 2.08k/2.08k [00:00<00:00, 2.26MB/s]
-Downloading (…)rocessor_config.json:   0%|          | 0.00/185k [00:00<?, ?B/s][2023-09-08 20:49:41.720150] Downloading (…)rocessor_config.json: 100%|██████████| 185k/185k [00:00<00:00, 53.8MB/s]
-Retrying langchain.embeddings.openai.embed_with_retry.<locals>._embed_with_retry in 4.0 seconds as it raised RateLimitError: Rate limit reached for default-text-embedding-ada-002 in organization org-AnHTO1VC4h0eMlKiJXSvQSXT on tokens per min. Limit: 150000 / min. Current: 1 / min. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method..
-Retrying langchain.embeddings.openai.embed_with_retry.<locals>._embed_with_retry in 4.0 seconds as it raised RateLimitError: Rate limit reached for default-text-embedding-ada-002 in organization org-AnHTO1VC4h0eMlKiJXSvQSXT on tokens per min. Limit: 150000 / min. Current: 0 / min. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method..
-Retrying langchain.embeddings.openai.embed_with_retry.<locals>._embed_with_retry in 4.0 seconds as it raised RateLimitError: Rate limit reached for default-text-embedding-ada-002 in organization org-AnHTO1VC4h0eMlKiJXSvQSXT on tokens per min. Limit: 150000 / min. Current: 0 / min. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method..
-Retrying langchain.embeddings.openai.embed_with_retry.<locals>._embed_with_retry in 8.0 seconds as it raised RateLimitError: Rate limit reached for default-text-embedding-ada-002 in organization org-AnHTO1VC4h0eMlKiJXSvQSXT on tokens per min. Limit: 150000 / min. Current: 0 / min. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method..
-Retrying langchain.embeddings.openai.embed_with_retry.<locals>._embed_with_retry in 10.0 seconds as it raised RateLimitError: Rate limit reached for default-text-embedding-ada-002 in organization org-AnHTO1VC4h0eMlKiJXSvQSXT on tokens per min. Limit: 150000 / min. Current: 1 / min. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method..
-2023-09-08 20:54:50.416 Uncaught app exception
-Traceback (most recent call last):
-  File "/home/appuser/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 552, in _run_script
-    exec(code, module.__dict__)
-  File "/app/medgpt/appStreamlit.py", line 346, in <module>
-    main()
-  File "/app/medgpt/appStreamlit.py", line 312, in main
-    VectorStorage =  Chunk_Embedding(Combined_Chunks)
-  File "/app/medgpt/appStreamlit.py", line 160, in Chunk_Embedding
-    VectoreDB = FAISS.from_texts(texts = Combined_Chunks, embedding = Embedding)
-  File "/home/appuser/venv/lib/python3.9/site-packages/langchain/vectorstores/faiss.py", line 602, in from_texts
-    embeddings = embedding.embed_documents(texts)
-  File "/home/appuser/venv/lib/python3.9/site-packages/langchain/embeddings/openai.py", line 483, in embed_documents
-    return self._get_len_safe_embeddings(texts, engine=self.deployment)
-  File "/home/appuser/venv/lib/python3.9/site-packages/langchain/embeddings/openai.py", line 367, in _get_len_safe_embeddings
-    response = embed_with_retry(
-  File "/home/appuser/venv/lib/python3.9/site-packages/langchain/embeddings/openai.py", line 107, in embed_with_retry
-    return _embed_with_retry(**kwargs)
-  File "/home/appuser/venv/lib/python3.9/site-packages/tenacity/__init__.py", line 289, in wrapped_f
-    return self(f, *args, **kw)
-  File "/home/appuser/venv/lib/python3.9/site-packages/tenacity/__init__.py", line 379, in __call__
-    do = self.iter(retry_state=retry_state)
-  File "/home/appuser/venv/lib/python3.9/site-packages/tenacity/__init__.py", line 325, in iter
-    raise retry_exc.reraise()
-  File "/home/appuser/venv/lib/python3.9/site-packages/tenacity/__init__.py", line 158, in reraise
-    raise self.last_attempt.result()
-  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 439, in result
-    return self.__get_result()
-  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
-    raise self._exception
-  File "/home/appuser/venv/lib/python3.9/site-packages/tenacity/__init__.py", line 382, in __call__
-    result = fn(*args, **kwargs)
-  File "/home/appuser/venv/lib/python3.9/site-packages/langchain/embeddings/openai.py", line 104, in _embed_with_retry
-    response = embeddings.client.create(**kwargs)
-  File "/home/appuser/venv/lib/python3.9/site-packages/openai/api_resources/embedding.py", line 33, in create
-    response = super().create(*args, **kwargs)
-  File "/home/appuser/venv/lib/python3.9/site-packages/openai/api_resources/abstract/engine_api_resource.py", line 153, in create
-    response, _, api_key = requestor.request(
-  File "/home/appuser/venv/lib/python3.9/site-packages/openai/api_requestor.py", line 298, in request
-    resp, got_stream = self._interpret_response(result, stream)
-  File "/home/appuser/venv/lib/python3.9/site-packages/openai/api_requestor.py", line 700, in _interpret_response
-    self._interpret_response_line(
-  File "/home/appuser/venv/lib/python3.9/site-packages/openai/api_requestor.py", line 765, in _interpret_response_line
-    raise self.handle_error_response(
-openai.error.RateLimitError: Rate limit reached for default-text-embedding-ada-002 in organization org-AnHTO1VC4h0eMlKiJXSvQSXT on tokens per min. Limit: 150000 / min. Current: 1 / min. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.
-2023-09-08 22:30:15.570 Uncaught app exception
-Traceback (most recent call last):
-  File "/home/appuser/venv/lib/python3.9/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 552, in _run_script
-    exec(code, module.__dict__)
-  File "/app/medgpt/appStreamlit.py", line 346, in <module>
-    main()
-  File "/app/medgpt/appStreamlit.py", line 340, in main
-    ConvoPlace(queries, st.session_state.ConversationModel, target_language, processor, model, speaker_embeddings, vocoder)
-  File "/app/medgpt/appStreamlit.py", line 228, in ConvoPlace
-    TranslatorResponse = openai.ChatCompletion.create(
-  File "/home/appuser/venv/lib/python3.9/site-packages/openai/api_resources/chat_completion.py", line 25, in create
-    return super().create(*args, **kwargs)
-  File "/home/appuser/venv/lib/python3.9/site-packages/openai/api_resources/abstract/engine_api_resource.py", line 153, in create
-    response, _, api_key = requestor.request(
-  File "/home/appuser/venv/lib/python3.9/site-packages/openai/api_requestor.py", line 298, in request
-    resp, got_stream = self._interpret_response(result, stream)
-  File "/home/appuser/venv/lib/python3.9/site-packages/openai/api_requestor.py", line 700, in _interpret_response
-    self._interpret_response_line(
-  File "/home/appuser/venv/lib/python3.9/site-packages/openai/api_requestor.py", line 765, in _interpret_response_line
-    raise self.handle_error_response(
-openai.error.RateLimitError: Rate limit reached for default-gpt-3.5-turbo in organization org-AnHTO1VC4h0eMlKiJXSvQSXT on requests per min. Limit: 3 / min. Please try again in 20s. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.
-[22:34:44] 🐙 Pulling code changes from Github...
-[22:34:46] 📦 Processing dependencies...
-
-──────────────────────────────────────── pip ───────────────────────────────────────────
-
-Collecting streamlit
-  Downloading streamlit-1.26.0-py2.py3-none-any.whl (8.1 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.1/8.1 MB 34.1 MB/s eta 0:00:00[2023-09-08 22:34:47.305639] 
-Collecting openai
-  Downloading openai-0.28.0-py3-none-any.whl (76 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 76.5/76.5 KB 192.0 MB/s eta 0:00:00[2023-09-08 22:34:47.367559] 
-Collecting tiktoken
-  Downloading tiktoken-0.4.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.7 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 87.5 MB/s eta 0:00:00
-Collecting langchain
-  Downloading langchain-0.0.285-py3-none-any.whl (1.7 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 104.0 MB/s eta 0:00:00[2023-09-08 22:34:47.676819] 
-Collecting nltk
-  Downloading nltk-3.8.1-py3-none-any.whl (1.5 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 116.3 MB/s eta 0:00:00[2023-09-08 22:34:47.747377] 
-Collecting python-docx
-  Downloading python-docx-0.8.11.tar.gz (5.6 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.6/5.6 MB 138.3 MB/s eta 0:00:00[2023-09-08 22:34:47.831457] 
-  Preparing metadata (setup.py): started
-  Preparing metadata (setup.py): finished with status 'done'
-Collecting python-dotenv
-  Downloading python_dotenv-1.0.0-py3-none-any.whl (19 kB)
-Collecting PyPDF2
-  Downloading pypdf2-3.0.1-py3-none-any.whl (232 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 232.6/232.6 KB 256.8 MB/s eta 0:00:00[2023-09-08 22:34:48.434852] 
-Collecting faiss-cpu
-  Downloading faiss_cpu-1.7.4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.6 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.6/17.6 MB 223.9 MB/s eta 0:00:00[2023-09-08 22:34:48.612823] 
-Collecting audio-recorder-streamlit
-  Downloading audio_recorder_streamlit-0.0.8-py3-none-any.whl (1.2 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 235.0 MB/s eta 0:00:00[2023-09-08 22:34:48.734582] 
-Collecting SpeechRecognition
-  Downloading SpeechRecognition-3.10.0-py2.py3-none-any.whl (32.8 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 32.8/32.8 MB 185.2 MB/s eta 0:00:00[2023-09-08 22:34:48.944393] 
-Collecting transformers
-  Downloading transformers-4.33.1-py3-none-any.whl (7.6 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.6/7.6 MB 165.5 MB/s eta 0:00:00[2023-09-08 22:34:49.113067] 
-Collecting sentencepiece
-  Downloading sentencepiece-0.1.99-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.3 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 265.2 MB/s eta 0:00:00[2023-09-08 22:34:49.287801] 
-Collecting datasets
-  Downloading datasets-2.14.5-py3-none-any.whl (519 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 519.6/519.6 KB 268.4 MB/s eta 0:00:00[2023-09-08 22:34:49.354134] 
-Collecting torch
-  Downloading torch-2.0.1-cp39-cp39-manylinux1_x86_64.whl (619.9 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 619.9/619.9 MB 197.5 MB/s eta 0:00:00[2023-09-08 22:34:52.353676] 
-Collecting toml<2,>=0.10.1
-  Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
-Collecting requests<3,>=2.18
-  Downloading requests-2.31.0-py3-none-any.whl (62 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.6/62.6 KB 188.2 MB/s eta 0:00:00[2023-09-08 22:34:53.667574] 
-Collecting protobuf<5,>=3.20
-  Downloading protobuf-4.24.3-cp37-abi3-manylinux2014_x86_64.whl (311 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 311.6/311.6 KB 262.5 MB/s eta 0:00:00[2023-09-08 22:34:54.058389] 
-Collecting pillow<10,>=7.1.0
-  Downloading Pillow-9.5.0-cp39-cp39-manylinux_2_28_x86_64.whl (3.4 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.4/3.4 MB 243.4 MB/s eta 0:00:00[2023-09-08 22:34:54.491372] 
-Collecting pandas<3,>=1.3.0
-  Downloading pandas-2.1.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.7 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.7/12.7 MB 215.6 MB/s eta 0:00:00[2023-09-08 22:34:54.845841] 
-Collecting tenacity<9,>=8.1.0
-  Downloading tenacity-8.2.3-py3-none-any.whl (24 kB)
-Collecting blinker<2,>=1.0.0
-  Downloading blinker-1.6.2-py3-none-any.whl (13 kB)
-Collecting numpy<2,>=1.19.3
-  Downloading numpy-1.25.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.3 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.3/18.3 MB 233.2 MB/s eta 0:00:00[2023-09-08 22:34:55.439792] 
-Collecting typing-extensions<5,>=4.1.0
-  Downloading typing_extensions-4.7.1-py3-none-any.whl (33 kB)
-Collecting watchdog>=2.1.5
-  Downloading watchdog-3.0.0-py3-none-manylinux2014_x86_64.whl (82 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 82.1/82.1 KB 222.9 MB/s eta 0:00:00[2023-09-08 22:34:55.620234] 
-Collecting tornado<7,>=6.0.3
-  Downloading tornado-6.3.3-cp38-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (427 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 427.7/427.7 KB 244.0 MB/s eta 0:00:00[2023-09-08 22:34:55.717599] 
-Collecting importlib-metadata<7,>=1.4
-  Downloading importlib_metadata-6.8.0-py3-none-any.whl (22 kB)
-Collecting pydeck<1,>=0.8
-  Downloading pydeck-0.8.0-py2.py3-none-any.whl (4.7 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.7/4.7 MB 202.8 MB/s eta 0:00:00[2023-09-08 22:34:55.886920] 
-Collecting pympler<2,>=0.9
-  Downloading Pympler-1.0.1-py3-none-any.whl (164 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 164.8/164.8 KB 209.3 MB/s eta 0:00:00[2023-09-08 22:34:55.936772] 
-Collecting cachetools<6,>=4.0
-  Downloading cachetools-5.3.1-py3-none-any.whl (9.3 kB)
-Collecting click<9,>=7.0
-  Downloading click-8.1.7-py3-none-any.whl (97 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 97.9/97.9 KB 225.8 MB/s eta 0:00:00[2023-09-08 22:34:56.031145] 
-Collecting python-dateutil<3,>=2.7.3
-  Downloading python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 247.7/247.7 KB 201.4 MB/s eta 0:00:00[2023-09-08 22:34:56.076907] 
-Collecting packaging<24,>=16.8
-  Downloading packaging-23.1-py3-none-any.whl (48 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.9/48.9 KB 193.7 MB/s eta 0:00:00[2023-09-08 22:34:56.132309] 
-Collecting rich<14,>=10.14.0
-  Downloading rich-13.5.2-py3-none-any.whl (239 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 239.7/239.7 KB 166.0 MB/s eta 0:00:00[2023-09-08 22:34:56.279711] 
-Collecting altair<6,>=4.0
-  Downloading altair-5.1.1-py3-none-any.whl (520 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 520.6/520.6 KB 241.4 MB/s eta 0:00:00[2023-09-08 22:34:56.334867] 
-Collecting pyarrow>=6.0
-  Downloading pyarrow-13.0.0-cp39-cp39-manylinux_2_28_x86_64.whl (40.1 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.1/40.1 MB 231.6 MB/s eta 0:00:00[2023-09-08 22:34:56.722255] 
-Collecting gitpython!=3.1.19,<4,>=3.0.7
-  Downloading GitPython-3.1.35-py3-none-any.whl (188 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 188.8/188.8 KB 248.0 MB/s eta 0:00:00[2023-09-08 22:34:56.845030] 
-Collecting tzlocal<5,>=1.1
-  Downloading tzlocal-4.3.1-py3-none-any.whl (20 kB)
-Collecting validators<1,>=0.2
-  Downloading validators-0.22.0-py3-none-any.whl (26 kB)
-Collecting aiohttp
-  Downloading aiohttp-3.8.5-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.1 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 260.4 MB/s eta 0:00:00[2023-09-08 22:34:57.483998] 
-Collecting tqdm
-  Downloading tqdm-4.66.1-py3-none-any.whl (78 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.3/78.3 KB 213.0 MB/s eta 0:00:00[2023-09-08 22:34:57.595607] 
-Collecting regex>=2022.1.18
-  Downloading regex-2023.8.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (771 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 771.4/771.4 KB 270.7 MB/s eta 0:00:00[2023-09-08 22:34:58.467269] 
-Collecting SQLAlchemy<3,>=1.4
-  Downloading SQLAlchemy-2.0.20-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.0 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.0/3.0 MB 223.4 MB/s eta 0:00:00[2023-09-08 22:34:59.380116] 
-Collecting dataclasses-json<0.6.0,>=0.5.7
-  Downloading dataclasses_json-0.5.14-py3-none-any.whl (26 kB)
-Collecting PyYAML>=5.3
-  Downloading PyYAML-6.0.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (738 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 738.9/738.9 KB 275.8 MB/s eta 0:00:00[2023-09-08 22:34:59.556898] 
-Collecting numexpr<3.0.0,>=2.8.4
-  Downloading numexpr-2.8.5-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (382 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 382.8/382.8 KB 165.8 MB/s eta 0:00:00[2023-09-08 22:34:59.695307] 
-Collecting langsmith<0.1.0,>=0.0.21
-  Downloading langsmith-0.0.35-py3-none-any.whl (37 kB)
-Collecting pydantic<3,>=1
-  Downloading pydantic-2.3.0-py3-none-any.whl (374 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 374.5/374.5 KB 267.0 MB/s eta 0:00:00[2023-09-08 22:35:00.018636] 
-Collecting async-timeout<5.0.0,>=4.0.0
-  Downloading async_timeout-4.0.3-py3-none-any.whl (5.7 kB)
-Collecting joblib
-  Downloading joblib-1.3.2-py3-none-any.whl (302 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 302.2/302.2 KB 254.4 MB/s eta 0:00:00[2023-09-08 22:35:00.170186] 
-Collecting lxml>=2.3.2
-  Downloading lxml-4.9.3-cp39-cp39-manylinux_2_28_x86_64.whl (8.0 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.0/8.0 MB 120.7 MB/s eta 0:00:00[2023-09-08 22:35:00.577894] 
-Collecting safetensors>=0.3.1
-  Downloading safetensors-0.3.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.3 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 256.4 MB/s eta 0:00:00[2023-09-08 22:35:01.230344] 
-Collecting tokenizers!=0.11.3,<0.14,>=0.11.1
-  Downloading tokenizers-0.13.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (7.8 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.8/7.8 MB 237.4 MB/s eta 0:00:00[2023-09-08 22:35:01.686656] 
-Collecting filelock
-  Downloading filelock-3.12.3-py3-none-any.whl (11 kB)
-Collecting huggingface-hub<1.0,>=0.15.1
-  Downloading huggingface_hub-0.16.4-py3-none-any.whl (268 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 268.8/268.8 KB 248.3 MB/s eta 0:00:00[2023-09-08 22:35:01.827851] 
-Collecting multiprocess
-  Downloading multiprocess-0.70.15-py39-none-any.whl (133 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.3/133.3 KB 212.5 MB/s eta 0:00:00[2023-09-08 22:35:02.005277] 
-Collecting dill<0.3.8,>=0.3.0
-  Downloading dill-0.3.7-py3-none-any.whl (115 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 115.3/115.3 KB 211.7 MB/s eta 0:00:00[2023-09-08 22:35:02.045855] 
-Collecting fsspec[http]<2023.9.0,>=2023.1.0
-  Downloading fsspec-2023.6.0-py3-none-any.whl (163 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 163.8/163.8 KB 256.5 MB/s eta 0:00:00[2023-09-08 22:35:02.120478] 
-Collecting xxhash
-  Downloading xxhash-3.3.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (193 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 193.8/193.8 KB 265.4 MB/s eta 0:00:00[2023-09-08 22:35:02.317441] 
-Collecting nvidia-cuda-runtime-cu11==11.7.99
-  Downloading nvidia_cuda_runtime_cu11-11.7.99-py3-none-manylinux1_x86_64.whl (849 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 849.3/849.3 KB 267.3 MB/s eta 0:00:00[2023-09-08 22:35:02.389497] 
-Collecting nvidia-nccl-cu11==2.14.3
-  Downloading nvidia_nccl_cu11-2.14.3-py3-none-manylinux1_x86_64.whl (177.1 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 177.1/177.1 MB 189.1 MB/s eta 0:00:00[2023-09-08 22:35:03.279193] 
-Collecting nvidia-nvtx-cu11==11.7.91
-  Downloading nvidia_nvtx_cu11-11.7.91-py3-none-manylinux1_x86_64.whl (98 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.6/98.6 KB 207.2 MB/s eta 0:00:00[2023-09-08 22:35:03.472593] 
-Collecting nvidia-curand-cu11==10.2.10.91
-  Downloading nvidia_curand_cu11-10.2.10.91-py3-none-manylinux1_x86_64.whl (54.6 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.6/54.6 MB 238.7 MB/s eta 0:00:00[2023-09-08 22:35:03.767235] 
-Collecting nvidia-cuda-nvrtc-cu11==11.7.99
-  Downloading nvidia_cuda_nvrtc_cu11-11.7.99-2-py3-none-manylinux1_x86_64.whl (21.0 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 21.0/21.0 MB 226.3 MB/s eta 0:00:00[2023-09-08 22:35:03.947802] 
-Collecting nvidia-cusparse-cu11==11.7.4.91
-  Downloading nvidia_cusparse_cu11-11.7.4.91-py3-none-manylinux1_x86_64.whl (173.2 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 173.2/173.2 MB 248.7 MB/s eta 0:00:00[2023-09-08 22:35:04.807167] 
-Collecting jinja2
-  Downloading Jinja2-3.1.2-py3-none-any.whl (133 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.1/133.1 KB 229.6 MB/s eta 0:00:00[2023-09-08 22:35:05.013597] 
-Collecting triton==2.0.0
-  Downloading triton-2.0.0-1-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (63.3 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.3/63.3 MB 223.3 MB/s eta 0:00:00[2023-09-08 22:35:05.377638] 
-Collecting sympy
-  Downloading sympy-1.12-py3-none-any.whl (5.7 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.7/5.7 MB 58.1 MB/s eta 0:00:00[2023-09-08 22:35:05.603105] 
-Collecting nvidia-cufft-cu11==10.9.0.58
-  Downloading nvidia_cufft_cu11-10.9.0.58-py3-none-manylinux1_x86_64.whl (168.4 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 168.4/168.4 MB 209.9 MB/s eta 0:00:00[2023-09-08 22:35:07.024369] 
-Collecting nvidia-cublas-cu11==11.10.3.66
-  Downloading nvidia_cublas_cu11-11.10.3.66-py3-none-manylinux1_x86_64.whl (317.1 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 317.1/317.1 MB 238.7 MB/s eta 0:00:00[2023-09-08 22:35:08.641877] 
-Collecting nvidia-cusolver-cu11==11.4.0.1
-  Downloading nvidia_cusolver_cu11-11.4.0.1-2-py3-none-manylinux1_x86_64.whl (102.6 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 102.6/102.6 MB 226.0 MB/s eta 0:00:00[2023-09-08 22:35:09.483737] 
-Collecting nvidia-cudnn-cu11==8.5.0.96
-  Downloading nvidia_cudnn_cu11-8.5.0.96-2-py3-none-manylinux1_x86_64.whl (557.1 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 557.1/557.1 MB 155.7 MB/s eta 0:00:00[2023-09-08 22:35:12.595709] 
-Collecting nvidia-cuda-cupti-cu11==11.7.101
-  Downloading nvidia_cuda_cupti_cu11-11.7.101-py3-none-manylinux1_x86_64.whl (11.8 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.8/11.8 MB 204.2 MB/s eta 0:00:00[2023-09-08 22:35:13.195379] 
-Collecting networkx
-  Downloading networkx-3.1-py3-none-any.whl (2.1 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 252.5 MB/s eta 0:00:00[2023-09-08 22:35:13.276451] 
-Collecting setuptools
-  Downloading setuptools-68.2.0-py3-none-any.whl (807 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 807.8/807.8 KB 253.1 MB/s eta 0:00:00[2023-09-08 22:35:13.616494] 
-Collecting wheel
-  Downloading wheel-0.41.2-py3-none-any.whl (64 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 64.8/64.8 KB 172.0 MB/s eta 0:00:00[2023-09-08 22:35:13.710084] 
-Collecting lit
-  Downloading lit-16.0.6.tar.gz (153 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 153.7/153.7 KB 212.6 MB/s eta 0:00:00[2023-09-08 22:35:13.829415] 
-  Installing build dependencies: started
-  Installing build dependencies: finished with status 'done'
-  Getting requirements to build wheel: started
-  Getting requirements to build wheel: finished with status 'done'
-  Installing backend dependencies: started
-  Installing backend dependencies: finished with status 'done'
-  Preparing metadata (pyproject.toml): started
-  Preparing metadata (pyproject.toml): finished with status 'done'
-Collecting cmake
-  Downloading cmake-3.27.4.1-py2.py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (26.1 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 26.1/26.1 MB 260.4 MB/s eta 0:00:00[2023-09-08 22:35:23.637148] 
-Collecting charset-normalizer<4.0,>=2.0
-  Downloading charset_normalizer-3.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (202 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 202.1/202.1 KB 238.5 MB/s eta 0:00:00[2023-09-08 22:35:23.841036] 
-Collecting aiosignal>=1.1.2
-  Downloading aiosignal-1.3.1-py3-none-any.whl (7.6 kB)
-Collecting frozenlist>=1.1.1
-  Downloading frozenlist-1.4.0-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (228 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 228.0/228.0 KB 145.5 MB/s eta 0:00:00[2023-09-08 22:35:24.067578] 
-Collecting attrs>=17.3.0
-  Downloading attrs-23.1.0-py3-none-any.whl (61 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.2/61.2 KB 182.7 MB/s eta 0:00:00[2023-09-08 22:35:24.119074] 
-Collecting yarl<2.0,>=1.0
-  Downloading yarl-1.9.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (269 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 269.4/269.4 KB 242.8 MB/s eta 0:00:00[2023-09-08 22:35:24.391311] 
-Collecting multidict<7.0,>=4.5
-  Downloading multidict-6.0.4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (114 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 114.2/114.2 KB 238.5 MB/s eta 0:00:00[2023-09-08 22:35:24.816323] 
-Collecting toolz
-  Downloading toolz-0.12.0-py3-none-any.whl (55 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 55.8/55.8 KB 160.3 MB/s eta 0:00:00[2023-09-08 22:35:24.904672] 
-Collecting jsonschema>=3.0
-  Downloading jsonschema-4.19.0-py3-none-any.whl (83 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 83.4/83.4 KB 194.3 MB/s eta 0:00:00[2023-09-08 22:35:24.992896] 
-Collecting marshmallow<4.0.0,>=3.18.0
-  Downloading marshmallow-3.20.1-py3-none-any.whl (49 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.4/49.4 KB 186.4 MB/s eta 0:00:00[2023-09-08 22:35:25.118362] 
-Collecting typing-inspect<1,>=0.4.0
-  Downloading typing_inspect-0.9.0-py3-none-any.whl (8.8 kB)
-Collecting gitdb<5,>=4.0.1
-  Downloading gitdb-4.0.10-py3-none-any.whl (62 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.7/62.7 KB 200.1 MB/s eta 0:00:00[2023-09-08 22:35:25.256138] 
-Collecting zipp>=0.5
-  Downloading zipp-3.16.2-py3-none-any.whl (7.2 kB)
-Collecting tzdata>=2022.1
-  Downloading tzdata-2023.3-py2.py3-none-any.whl (341 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 341.8/341.8 KB 155.0 MB/s eta 0:00:00[2023-09-08 22:35:25.612708] 
-Collecting pytz>=2020.1
-  Downloading pytz-2023.3.post1-py2.py3-none-any.whl (502 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 502.5/502.5 KB 265.4 MB/s eta 0:00:00[2023-09-08 22:35:25.746070] 
-Collecting annotated-types>=0.4.0
-  Downloading annotated_types-0.5.0-py3-none-any.whl (11 kB)
-Collecting pydantic-core==2.6.3
-  Downloading pydantic_core-2.6.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.9 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.9/1.9 MB 249.2 MB/s eta 0:00:00[2023-09-08 22:35:27.004240] 
-Collecting MarkupSafe>=2.0
-  Downloading MarkupSafe-2.1.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (25 kB)
-Collecting six>=1.5
-  Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
-Collecting urllib3<3,>=1.21.1
-  Downloading urllib3-2.0.4-py3-none-any.whl (123 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 123.9/123.9 KB 172.6 MB/s eta 0:00:00[2023-09-08 22:35:27.364413] 
-Collecting idna<4,>=2.5
-  Downloading idna-3.4-py3-none-any.whl (61 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.5/61.5 KB 197.0 MB/s eta 0:00:00[2023-09-08 22:35:27.528262] 
-Collecting certifi>=2017.4.17
-  Downloading certifi-2023.7.22-py3-none-any.whl (158 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 158.3/158.3 KB 239.4 MB/s eta 0:00:00[2023-09-08 22:35:27.583854] 
-Collecting pygments<3.0.0,>=2.13.0
-  Downloading Pygments-2.16.1-py3-none-any.whl (1.2 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 254.9 MB/s eta 0:00:00[2023-09-08 22:35:27.658328] 
-Collecting markdown-it-py>=2.2.0
-  Downloading markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.5/87.5 KB 207.2 MB/s eta 0:00:00[2023-09-08 22:35:27.713523] 
-Collecting greenlet!=0.4.17
-  Downloading greenlet-2.0.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (610 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 610.9/610.9 KB 267.6 MB/s eta 0:00:00[2023-09-08 22:35:28.098868] 
-Collecting pytz-deprecation-shim
-  Downloading pytz_deprecation_shim-0.1.0.post0-py2.py3-none-any.whl (15 kB)
-Collecting mpmath>=0.19
-  Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 KB 253.8 MB/s eta 0:00:00[2023-09-08 22:35:28.404325] 
-Collecting smmap<6,>=3.0.1
-  Downloading smmap-5.0.0-py3-none-any.whl (24 kB)
-Collecting jsonschema-specifications>=2023.03.6
-  Downloading jsonschema_specifications-2023.7.1-py3-none-any.whl (17 kB)
-Collecting referencing>=0.28.4
-  Downloading referencing-0.30.2-py3-none-any.whl (25 kB)
-Collecting rpds-py>=0.7.1
-  Downloading rpds_py-0.10.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.2 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 162.3 MB/s eta 0:00:00[2023-09-08 22:35:28.991295] 
-Collecting mdurl~=0.1
-  Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
-Collecting mypy-extensions>=0.3.0
-  Downloading mypy_extensions-1.0.0-py3-none-any.whl (4.7 kB)
-Building wheels for collected packages: python-docx, lit
-  Building wheel for python-docx (setup.py): started
-  Building wheel for python-docx (setup.py): finished with status 'done'
-  Created wheel for python-docx: filename=python_docx-0.8.11-py3-none-any.whl size=184487 sha256=f8c258ed863babfe4b848c174d6355f95bdeeafebe91e74b4899a23d843b7e38
-  Stored in directory: /tmp/pip-ephem-wheel-cache-1p3oc9ux/wheels/83/8b/7c/09ae60c42c7ba4ed2dddaf2b8b9186cb105255856d6ed3dba5
-  Building wheel for lit (pyproject.toml): started
-  Building wheel for lit (pyproject.toml): finished with status 'done'
-  Created wheel for lit: filename=lit-16.0.6-py3-none-any.whl size=93584 sha256=63f1cbd86b7b733743afa4f06e522e0428d144365c66496ba1b35f3412a03b93
-  Stored in directory: /tmp/pip-ephem-wheel-cache-1p3oc9ux/wheels/a5/36/d6/cac2e6fb891889b33a548f2fddb8b4b7726399aaa2ed32b188
-Successfully built python-docx lit
-Installing collected packages: tokenizers, sentencepiece, safetensors, pytz, mpmath, lit, faiss-cpu, cmake, zipp, xxhash, wheel, watchdog, validators, urllib3, tzdata, typing-extensions, tqdm, tornado, toolz, toml, tenacity, sympy, smmap, six, setuptools, rpds-py, regex, PyYAML, python-dotenv, pympler, pygments, protobuf, pillow, packaging, nvidia-nccl-cu11, nvidia-cufft-cu11, nvidia-cuda-nvrtc-cu11, numpy, networkx, mypy-extensions, multidict, mdurl, MarkupSafe, lxml, joblib, idna, greenlet, fsspec, frozenlist, dill, click, charset-normalizer, certifi, cachetools, blinker, attrs, async-timeout, annotated-types, yarl, typing-inspect, SQLAlchemy, requests, referencing, pytz-deprecation-shim, python-docx, python-dateutil, PyPDF2, pydantic-core, pyarrow, nvidia-nvtx-cu11, nvidia-cusparse-cu11, nvidia-curand-cu11, nvidia-cuda-runtime-cu11, nvidia-cuda-cupti-cu11, nvidia-cublas-cu11, numexpr, nltk, multiprocess, marshmallow, markdown-it-py, jinja2, importlib-metadata, gitdb, filelock, aiosignal, tzlocal, tiktoken, SpeechRecognition, rich, pydeck, pydantic, pandas, nvidia-cusolver-cu11, nvidia-cudnn-cu11, jsonschema-specifications, huggingface-hub, gitpython, dataclasses-json, aiohttp, transformers, openai, langsmith, jsonschema, langchain, datasets, altair, streamlit, audio-recorder-streamlit, triton, torch
-  Attempting uninstall: tokenizers
-    Found existing installation: tokenizers 0.13.3
-    Uninstalling tokenizers-0.13.3:
-      Successfully uninstalled tokenizers-0.13.3
-  Attempting uninstall: sentencepiece
-    Found existing installation: sentencepiece 0.1.99
-    Uninstalling sentencepiece-0.1.99:
-      Successfully uninstalled sentencepiece-0.1.99
-  Attempting uninstall: safetensors
-    Found existing installation: safetensors 0.3.3
-    Uninstalling safetensors-0.3.3:
-      Successfully uninstalled safetensors-0.3.3
-  Attempting uninstall: pytz
-    Found existing installation: pytz 2023.3.post1
-    Uninstalling pytz-2023.3.post1:
-      Successfully uninstalled pytz-2023.3.post1
-  Attempting uninstall: mpmath
-    Found existing installation: mpmath 1.3.0
-    Uninstalling mpmath-1.3.0:
-      Successfully uninstalled mpmath-1.3.0
-  Attempting uninstall: lit
-    Found existing installation: lit 16.0.6
-    Uninstalling lit-16.0.6:
-      Successfully uninstalled lit-16.0.6
-  Attempting uninstall: faiss-cpu
-    Found existing installation: faiss-cpu 1.7.4
-    Uninstalling faiss-cpu-1.7.4:
-      Successfully uninstalled faiss-cpu-1.7.4
-  Attempting uninstall: cmake
-    Found existing installation: cmake 3.27.4.1
-    Uninstalling cmake-3.27.4.1:
-      Successfully uninstalled cmake-3.27.4.1
-  Attempting uninstall: zipp
-    Found existing installation: zipp 3.16.2
-    Uninstalling zipp-3.16.2:
-      Successfully uninstalled zipp-3.16.2
-  Attempting uninstall: xxhash
-    Found existing installation: xxhash 3.3.0
-    Uninstalling xxhash-3.3.0:
-      Successfully uninstalled xxhash-3.3.0
-  Attempting uninstall: wheel
-    Found existing installation: wheel 0.41.2
-    Uninstalling wheel-0.41.2:
-      Successfully uninstalled wheel-0.41.2
-  Attempting uninstall: watchdog
-    Found existing installation: watchdog 3.0.0
-    Uninstalling watchdog-3.0.0:
-      Successfully uninstalled watchdog-3.0.0
-  Attempting uninstall: validators
-    Found existing installation: validators 0.22.0
-    Uninstalling validators-0.22.0:
-      Successfully uninstalled validators-0.22.0
-  Attempting uninstall: urllib3
-    Found existing installation: urllib3 2.0.4
-    Uninstalling urllib3-2.0.4:
-      Successfully uninstalled urllib3-2.0.4
-  Attempting uninstall: tzdata
-    Found existing installation: tzdata 2023.3
-    Uninstalling tzdata-2023.3:
-      Successfully uninstalled tzdata-2023.3
-  Attempting uninstall: typing-extensions
-    Found existing installation: typing_extensions 4.7.1
-    Uninstalling typing_extensions-4.7.1:
-      Successfully uninstalled typing_extensions-4.7.1
-  Attempting uninstall: tqdm
-    Found existing installation: tqdm 4.66.1
-    Uninstalling tqdm-4.66.1:
-      Successfully uninstalled tqdm-4.66.1
-  Attempting uninstall: tornado
-    Found existing installation: tornado 6.3.3
-    Uninstalling tornado-6.3.3:
-      Successfully uninstalled tornado-6.3.3
-  Attempting uninstall: toolz
-    Found existing installation: toolz 0.12.0
-    Uninstalling toolz-0.12.0:
-      Successfully uninstalled toolz-0.12.0
-  Attempting uninstall: toml
-    Found existing installation: toml 0.10.2
-    Uninstalling toml-0.10.2:
-      Successfully uninstalled toml-0.10.2
-  Attempting uninstall: tenacity
-    Found existing installation: tenacity 8.2.3
-    Uninstalling tenacity-8.2.3:
-      Successfully uninstalled tenacity-8.2.3
-  Attempting uninstall: sympy
-    Found existing installation: sympy 1.12
-    Uninstalling sympy-1.12:
-      Successfully uninstalled sympy-1.12
-  Attempting uninstall: smmap
-    Found existing installation: smmap 5.0.0
-    Uninstalling smmap-5.0.0:
-      Successfully uninstalled smmap-5.0.0
-  Attempting uninstall: six
-    Found existing installation: six 1.16.0
-    Uninstalling six-1.16.0:
-      Successfully uninstalled six-1.16.0
-  Attempting uninstall: setuptools
-    Found existing installation: setuptools 68.2.0
-    Uninstalling setuptools-68.2.0:
-      Successfully uninstalled setuptools-68.2.0
-  Attempting uninstall: rpds-py
-    Found existing installation: rpds-py 0.10.2
-    Uninstalling rpds-py-0.10.2:
-      Successfully uninstalled rpds-py-0.10.2
-  Attempting uninstall: regex
-    Found existing installation: regex 2023.8.8
-    Uninstalling regex-2023.8.8:
-      Successfully uninstalled regex-2023.8.8
-  Attempting uninstall: PyYAML
-    Found existing installation: PyYAML 6.0.1
-    Uninstalling PyYAML-6.0.1:
-      Successfully uninstalled PyYAML-6.0.1
-  Attempting uninstall: python-dotenv
-    Found existing installation: python-dotenv 1.0.0
-    Uninstalling python-dotenv-1.0.0:
-      Successfully uninstalled python-dotenv-1.0.0
-  Attempting uninstall: pympler
-    Found existing installation: Pympler 1.0.1
-    Uninstalling Pympler-1.0.1:
-      Successfully uninstalled Pympler-1.0.1
-  Attempting uninstall: pygments
-    Found existing installation: Pygments 2.16.1
-    Uninstalling Pygments-2.16.1:
-      Successfully uninstalled Pygments-2.16.1
-  Attempting uninstall: protobuf
-    Found existing installation: protobuf 4.24.3
-    Uninstalling protobuf-4.24.3:
-      Successfully uninstalled protobuf-4.24.3
-  Attempting uninstall: pillow
-    Found existing installation: Pillow 9.5.0
-    Uninstalling Pillow-9.5.0:
-      Successfully uninstalled Pillow-9.5.0
-  Attempting uninstall: packaging
-    Found existing installation: packaging 23.1
-    Uninstalling packaging-23.1:
-      Successfully uninstalled packaging-23.1
-  Attempting uninstall: nvidia-nccl-cu11
-    Found existing installation: nvidia-nccl-cu11 2.14.3
-    Uninstalling nvidia-nccl-cu11-2.14.3:
-      Successfully uninstalled nvidia-nccl-cu11-2.14.3
-  Attempting uninstall: nvidia-cufft-cu11
-    Found existing installation: nvidia-cufft-cu11 10.9.0.58
-    Uninstalling nvidia-cufft-cu11-10.9.0.58:
-      Successfully uninstalled nvidia-cufft-cu11-10.9.0.58
-  Attempting uninstall: nvidia-cuda-nvrtc-cu11
-    Found existing installation: nvidia-cuda-nvrtc-cu11 11.7.99
-    Uninstalling nvidia-cuda-nvrtc-cu11-11.7.99:
-      Successfully uninstalled nvidia-cuda-nvrtc-cu11-11.7.99
-  Attempting uninstall: numpy
-    Found existing installation: numpy 1.25.2
-    Uninstalling numpy-1.25.2:
-      Successfully uninstalled numpy-1.25.2
-  Attempting uninstall: networkx
-    Found existing installation: networkx 3.1
-    Uninstalling networkx-3.1:
-      Successfully uninstalled networkx-3.1
-  Attempting uninstall: mypy-extensions
-    Found existing installation: mypy-extensions 1.0.0
-    Uninstalling mypy-extensions-1.0.0:
-      Successfully uninstalled mypy-extensions-1.0.0
-  Attempting uninstall: multidict
-    Found existing installation: multidict 6.0.4
-    Uninstalling multidict-6.0.4:
-      Successfully uninstalled multidict-6.0.4
-  Attempting uninstall: mdurl
-    Found existing installation: mdurl 0.1.2
-    Uninstalling mdurl-0.1.2:
-      Successfully uninstalled mdurl-0.1.2
-  Attempting uninstall: MarkupSafe
-    Found existing installation: MarkupSafe 2.1.3
-    Uninstalling MarkupSafe-2.1.3:
-      Successfully uninstalled MarkupSafe-2.1.3
-  Attempting uninstall: lxml
-    Found existing installation: lxml 4.9.3
-    Uninstalling lxml-4.9.3:
-      Successfully uninstalled lxml-4.9.3
-  Attempting uninstall: joblib
-    Found existing installation: joblib 1.3.2
-    Uninstalling joblib-1.3.2:
-      Successfully uninstalled joblib-1.3.2
-  Attempting uninstall: idna
-    Found existing installation: idna 3.4
-    Uninstalling idna-3.4:
-      Successfully uninstalled idna-3.4
-  Attempting uninstall: greenlet
-    Found existing installation: greenlet 2.0.2
-    Uninstalling greenlet-2.0.2:
-      Successfully uninstalled greenlet-2.0.2
-  Attempting uninstall: fsspec
-    Found existing installation: fsspec 2023.6.0
-    Uninstalling fsspec-2023.6.0:
-      Successfully uninstalled fsspec-2023.6.0
-  Attempting uninstall: frozenlist
-    Found existing installation: frozenlist 1.4.0
-    Uninstalling frozenlist-1.4.0:
-      Successfully uninstalled frozenlist-1.4.0
-  Attempting uninstall: dill
-    Found existing installation: dill 0.3.7
-    Uninstalling dill-0.3.7:
-      Successfully uninstalled dill-0.3.7
-  Attempting uninstall: click
-    Found existing installation: click 8.1.7
-    Uninstalling click-8.1.7:
-      Successfully uninstalled click-8.1.7
-  Attempting uninstall: charset-normalizer
-    Found existing installation: charset-normalizer 3.2.0
-    Uninstalling charset-normalizer-3.2.0:
-      Successfully uninstalled charset-normalizer-3.2.0
-  Attempting uninstall: certifi
-    Found existing installation: certifi 2023.7.22
-    Uninstalling certifi-2023.7.22:
-      Successfully uninstalled certifi-2023.7.22
-  Attempting uninstall: cachetools
-    Found existing installation: cachetools 5.3.1
-    Uninstalling cachetools-5.3.1:
-      Successfully uninstalled cachetools-5.3.1
-  Attempting uninstall: blinker
-    Found existing installation: blinker 1.6.2
-    Uninstalling blinker-1.6.2:
-      Successfully uninstalled blinker-1.6.2
-  Attempting uninstall: attrs
-    Found existing installation: attrs 23.1.0
-    Uninstalling attrs-23.1.0:
-      Successfully uninstalled attrs-23.1.0
-  Attempting uninstall: async-timeout
-    Found existing installation: async-timeout 4.0.3
-    Uninstalling async-timeout-4.0.3:
-      Successfully uninstalled async-timeout-4.0.3
-  Attempting uninstall: annotated-types
-    Found existing installation: annotated-types 0.5.0
-    Uninstalling annotated-types-0.5.0:
-      Successfully uninstalled annotated-types-0.5.0
-  Attempting uninstall: yarl
-    Found existing installation: yarl 1.9.2
-    Uninstalling yarl-1.9.2:
-      Successfully uninstalled yarl-1.9.2
-  Attempting uninstall: typing-inspect
-    Found existing installation: typing-inspect 0.9.0
-    Uninstalling typing-inspect-0.9.0:
-      Successfully uninstalled typing-inspect-0.9.0
-  Attempting uninstall: SQLAlchemy
-    Found existing installation: SQLAlchemy 2.0.20
-    Uninstalling SQLAlchemy-2.0.20:
-      Successfully uninstalled SQLAlchemy-2.0.20
-  Attempting uninstall: requests
-    Found existing installation: requests 2.31.0
-    Uninstalling requests-2.31.0:
-      Successfully uninstalled requests-2.31.0
-  Attempting uninstall: referencing
-    Found existing installation: referencing 0.30.2
-    Uninstalling referencing-0.30.2:
-      Successfully uninstalled referencing-0.30.2
-  Attempting uninstall: pytz-deprecation-shim
-    Found existing installation: pytz-deprecation-shim 0.1.0.post0
-    Uninstalling pytz-deprecation-shim-0.1.0.post0:
-      Successfully uninstalled pytz-deprecation-shim-0.1.0.post0
-  Attempting uninstall: python-docx
-    Found existing installation: python-docx 0.8.11
-    Uninstalling python-docx-0.8.11:
-      Successfully uninstalled python-docx-0.8.11
-  Attempting uninstall: python-dateutil
-    Found existing installation: python-dateutil 2.8.2
-    Uninstalling python-dateutil-2.8.2:
-      Successfully uninstalled python-dateutil-2.8.2
-  Attempting uninstall: PyPDF2
-    Found existing installation: PyPDF2 3.0.1
-    Uninstalling PyPDF2-3.0.1:
-      Successfully uninstalled PyPDF2-3.0.1
-  Attempting uninstall: pydantic-core
-    Found existing installation: pydantic_core 2.6.3
-    Uninstalling pydantic_core-2.6.3:
-      Successfully uninstalled pydantic_core-2.6.3
-  Attempting uninstall: pyarrow
-    Found existing installation: pyarrow 13.0.0
-    Uninstalling pyarrow-13.0.0:
-      Successfully uninstalled pyarrow-13.0.0
-  Attempting uninstall: nvidia-nvtx-cu11
-    Found existing installation: nvidia-nvtx-cu11 11.7.91
-    Uninstalling nvidia-nvtx-cu11-11.7.91:
-      Successfully uninstalled nvidia-nvtx-cu11-11.7.91
-  Attempting uninstall: nvidia-cusparse-cu11
-    Found existing installation: nvidia-cusparse-cu11 11.7.4.91
-    Uninstalling nvidia-cusparse-cu11-11.7.4.91:
-      Successfully uninstalled nvidia-cusparse-cu11-11.7.4.91
-  Attempting uninstall: nvidia-curand-cu11
-    Found existing installation: nvidia-curand-cu11 10.2.10.91
-    Uninstalling nvidia-curand-cu11-10.2.10.91:
-      Successfully uninstalled nvidia-curand-cu11-10.2.10.91
-  Attempting uninstall: nvidia-cuda-runtime-cu11
-    Found existing installation: nvidia-cuda-runtime-cu11 11.7.99
-    Uninstalling nvidia-cuda-runtime-cu11-11.7.99:
-      Successfully uninstalled nvidia-cuda-runtime-cu11-11.7.99
-  Attempting uninstall: nvidia-cuda-cupti-cu11
-    Found existing installation: nvidia-cuda-cupti-cu11 11.7.101
-    Uninstalling nvidia-cuda-cupti-cu11-11.7.101:
-      Successfully uninstalled nvidia-cuda-cupti-cu11-11.7.101
-  Attempting uninstall: nvidia-cublas-cu11
-    Found existing installation: nvidia-cublas-cu11 11.10.3.66
-    Uninstalling nvidia-cublas-cu11-11.10.3.66:
-      Successfully uninstalled nvidia-cublas-cu11-11.10.3.66
-  Attempting uninstall: numexpr
-    Found existing installation: numexpr 2.8.5
-    Uninstalling numexpr-2.8.5:
-      Successfully uninstalled numexpr-2.8.5
-  Attempting uninstall: nltk
-    Found existing installation: nltk 3.8.1
-    Uninstalling nltk-3.8.1:
-      Successfully uninstalled nltk-3.8.1
-  Attempting uninstall: multiprocess
-    Found existing installation: multiprocess 0.70.15
-    Uninstalling multiprocess-0.70.15:
-      Successfully uninstalled multiprocess-0.70.15
-  Attempting uninstall: marshmallow
-    Found existing installation: marshmallow 3.20.1
-    Uninstalling marshmallow-3.20.1:
-      Successfully uninstalled marshmallow-3.20.1
-  Attempting uninstall: markdown-it-py
-    Found existing installation: markdown-it-py 3.0.0
-    Uninstalling markdown-it-py-3.0.0:
-      Successfully uninstalled markdown-it-py-3.0.0
-  Attempting uninstall: jinja2
-    Found existing installation: Jinja2 3.1.2
-    Uninstalling Jinja2-3.1.2:
-      Successfully uninstalled Jinja2-3.1.2
-  Attempting uninstall: importlib-metadata
-    Found existing installation: importlib-metadata 6.8.0
-    Uninstalling importlib-metadata-6.8.0:
-      Successfully uninstalled importlib-metadata-6.8.0
-  Attempting uninstall: gitdb
-    Found existing installation: gitdb 4.0.10
-    Uninstalling gitdb-4.0.10:
-      Successfully uninstalled gitdb-4.0.10
-  Attempting uninstall: filelock
-    Found existing installation: filelock 3.12.3
-    Uninstalling filelock-3.12.3:
-      Successfully uninstalled filelock-3.12.3
-  Attempting uninstall: aiosignal
-    Found existing installation: aiosignal 1.3.1
-    Uninstalling aiosignal-1.3.1:
-      Successfully uninstalled aiosignal-1.3.1
-  Attempting uninstall: tzlocal
-    Found existing installation: tzlocal 4.3.1
-    Uninstalling tzlocal-4.3.1:
-      Successfully uninstalled tzlocal-4.3.1
-  Attempting uninstall: tiktoken
-    Found existing installation: tiktoken 0.4.0
-    Uninstalling tiktoken-0.4.0:
-      Successfully uninstalled tiktoken-0.4.0
-  Attempting uninstall: SpeechRecognition
-    Found existing installation: SpeechRecognition 3.10.0
-    Uninstalling SpeechRecognition-3.10.0:
-      Successfully uninstalled SpeechRecognition-3.10.0
-  Attempting uninstall: rich
-    Found existing installation: rich 13.5.2
-    Uninstalling rich-13.5.2:
-      Successfully uninstalled rich-13.5.2
-  Attempting uninstall: pydeck
-    Found existing installation: pydeck 0.8.0
-    Uninstalling pydeck-0.8.0:
-      Successfully uninstalled pydeck-0.8.0
-  Attempting uninstall: pydantic
-    Found existing installation: pydantic 2.3.0
-    Uninstalling pydantic-2.3.0:
-      Successfully uninstalled pydantic-2.3.0
-  Attempting uninstall: pandas
-    Found existing installation: pandas 2.1.0
-    Uninstalling pandas-2.1.0:
-      Successfully uninstalled pandas-2.1.0
-  Attempting uninstall: nvidia-cusolver-cu11
-    Found existing installation: nvidia-cusolver-cu11 11.4.0.1
-    Uninstalling nvidia-cusolver-cu11-11.4.0.1:
-      Successfully uninstalled nvidia-cusolver-cu11-11.4.0.1
-  Attempting uninstall: nvidia-cudnn-cu11
-    Found existing installation: nvidia-cudnn-cu11 8.5.0.96
-    Uninstalling nvidia-cudnn-cu11-8.5.0.96:
-      Successfully uninstalled nvidia-cudnn-cu11-8.5.0.96
-  Attempting uninstall: jsonschema-specifications
-    Found existing installation: jsonschema-specifications 2023.7.1
-    Uninstalling jsonschema-specifications-2023.7.1:
-      Successfully uninstalled jsonschema-specifications-2023.7.1
-  Attempting uninstall: huggingface-hub
-    Found existing installation: huggingface-hub 0.16.4
-    Uninstalling huggingface-hub-0.16.4:
-      Successfully uninstalled huggingface-hub-0.16.4
-  Attempting uninstall: gitpython
-    Found existing installation: GitPython 3.1.35
-    Uninstalling GitPython-3.1.35:
-      Successfully uninstalled GitPython-3.1.35
-  Attempting uninstall: dataclasses-json
-    Found existing installation: dataclasses-json 0.5.14
-    Uninstalling dataclasses-json-0.5.14:
-      Successfully uninstalled dataclasses-json-0.5.14
-  Attempting uninstall: aiohttp
-    Found existing installation: aiohttp 3.8.5
-    Uninstalling aiohttp-3.8.5:
-      Successfully uninstalled aiohttp-3.8.5
-  Attempting uninstall: transformers
-    Found existing installation: transformers 4.33.1
-    Uninstalling transformers-4.33.1:
-      Successfully uninstalled transformers-4.33.1
-  Attempting uninstall: openai
-    Found existing installation: openai 0.28.0
-    Uninstalling openai-0.28.0:
-      Successfully uninstalled openai-0.28.0
-  Attempting uninstall: langsmith
-    Found existing installation: langsmith 0.0.35
-    Uninstalling langsmith-0.0.35:
-      Successfully uninstalled langsmith-0.0.35
-  Attempting uninstall: jsonschema
-    Found existing installation: jsonschema 4.19.0
-    Uninstalling jsonschema-4.19.0:
-      Successfully uninstalled jsonschema-4.19.0
-  Attempting uninstall: langchain
-    Found existing installation: langchain 0.0.285
-    Uninstalling langchain-0.0.285:
-      Successfully uninstalled langchain-0.0.285
-  Attempting uninstall: datasets
-    Found existing installation: datasets 2.14.5
-    Uninstalling datasets-2.14.5:
-      Successfully uninstalled datasets-2.14.5
-  Attempting uninstall: altair
-    Found existing installation: altair 5.1.1
-    Uninstalling altair-5.1.1:
-      Successfully uninstalled altair-5.1.1
-  Attempting uninstall: streamlit
-    Found existing installation: streamlit 1.26.0
-    Uninstalling streamlit-1.26.0:
-      Successfully uninstalled streamlit-1.26.0
-  Attempting uninstall: audio-recorder-streamlit
-    Found existing installation: audio-recorder-streamlit 0.0.8
-    Uninstalling audio-recorder-streamlit-0.0.8:
-      Successfully uninstalled audio-recorder-streamlit-0.0.8
-  Attempting uninstall: triton
-    Found existing installation: triton 2.0.0
-    Uninstalling triton-2.0.0:
-      Successfully uninstalled triton-2.0.0
-  Attempting uninstall: torch
-    Found existing installation: torch 2.0.1
-    Uninstalling torch-2.0.1:
-      Successfully uninstalled torch-2.0.1
-Successfully installed MarkupSafe-2.1.3 PyPDF2-3.0.1 PyYAML-6.0.1 SQLAlchemy-2.0.20 SpeechRecognition-3.10.0 aiohttp-3.8.5 aiosignal-1.3.1 altair-5.1.1 annotated-types-0.5.0 async-timeout-4.0.3 attrs-23.1.0 audio-recorder-streamlit-0.0.8 blinker-1.6.2 cachetools-5.3.1 certifi-2023.7.22 charset-normalizer-3.2.0 click-8.1.7 cmake-3.27.4.1 dataclasses-json-0.5.14 datasets-2.14.5 dill-0.3.7 faiss-cpu-1.7.4 filelock-3.12.3 frozenlist-1.4.0 fsspec-2023.6.0 gitdb-4.0.10 gitpython-3.1.35 greenlet-2.0.2 huggingface-hub-0.16.4 idna-3.4 importlib-metadata-6.8.0 jinja2-3.1.2 joblib-1.3.2 jsonschema-4.19.0 jsonschema-specifications-2023.7.1 langchain-0.0.285 langsmith-0.0.35 lit-16.0.6 lxml-4.9.3 markdown-it-py-3.0.0 marshmallow-3.20.1 mdurl-0.1.2 mpmath-1.3.0 multidict-6.0.4 multiprocess-0.70.15 mypy-extensions-1.0.0 networkx-3.1 nltk-3.8.1 numexpr-2.8.5 numpy-1.25.2 nvidia-cublas-cu11-11.10.3.66 nvidia-cuda-cupti-cu11-11.7.101 nvidia-cuda-nvrtc-cu11-11.7.99 nvidia-cuda-runtime-cu11-11.7.99 nvidia-cudnn-cu11-8.5.0.96 nvidia-cufft-cu11-10.9.0.58 nvidia-curand-cu11-10.2.10.91 nvidia-cusolver-cu11-11.4.0.1 nvidia-cusparse-cu11-11.7.4.91 nvidia-nccl-cu11-2.14.3 nvidia-nvtx-cu11-11.7.91 openai-0.28.0 packaging-23.1 pandas-2.1.0 pillow-9.5.0 protobuf-4.24.3 pyarrow-13.0.0 pydantic-2.3.0 pydantic-core-2.6.3 pydeck-0.8.0 pygments-2.16.1 pympler-1.0.1 python-dateutil-2.8.2 python-docx-0.8.11 python-dotenv-1.0.0 pytz-2023.3.post1 pytz-deprecation-shim-0.1.0.post0 referencing-0.30.2 regex-2023.8.8 requests-2.31.0 rich-13.5.2 rpds-py-0.10.2 safetensors-0.3.3 sentencepiece-0.1.99 setuptools-68.2.0 six-1.16.0 smmap-5.0.0 streamlit-1.26.0 sympy-1.12 tenacity-8.2.3 tiktoken-0.4.0 tokenizers-0.13.3 toml-0.10.2 toolz-0.12.0 torch-2.0.1 tornado-6.3.3 tqdm-4.66.1 transformers-4.33.1 triton-2.0.0 typing-extensions-4.7.1 typing-inspect-0.9.0 tzdata-2023.3 tzlocal-4.3.1 urllib3-2.0.4 validators-0.22.0 watchdog-3.0.0 wheel-0.41.2 xxhash-3.3.0 yarl-1.9.2 zipp-3.16.2
-WARNING: You are using pip version 22.0.3; however, version 23.2.1 is available.
-You should consider upgrading via the '/home/appuser/venv/bin/python -m pip install --upgrade pip' command.
-Checking if Streamlit is installed
-Found Streamlit version 1.26.0 in the environment
-
-────────────────────────────────────────────────────────────────────────────────────────
-
-[22:36:53] 🐍 Python dependencies were installed from /app/medgpt/requirements.txt using pip.
-[22:36:53] 📦 Processed dependencies!
-
-
-> Entering new RetrievalQA chain...
-
-> Finished chain.
-checking the value of response {'query': 'Hello', 'chat_history': [HumanMessage(content='Hello', additional_kwargs={}, example=False), AIMessage(content=' Hello! How may I help you?', additional_kwargs={}, example=False)], 'result': ' Hello! How may I help you?'}
-
-
-> Entering new RetrievalQA chain...
-
-> Finished chain.
-checking the value of response {'query': 'what is this document about', 'chat_history': [HumanMessage(content='what is this document about', additional_kwargs={}, example=False), AIMessage(content=' This document is not about anything; it is simply the name and date of a person.', additional_kwargs={}, example=False)], 'result': ' This document is not about anything; it is simply the name and date of a person.'}
-
-
-> Entering new RetrievalQA chain...
-
-> Finished chain.
-checking the value of response {'query': 'no this document is about the certification received by harish', 'chat_history': [HumanMessage(content='what is this document about', additional_kwargs={}, example=False), AIMessage(content=' This document is not about anything; it is simply the name and date of a person.', additional_kwargs={}, example=False), HumanMessage(content='no this document is about the certification received by harish', additional_kwargs={}, example=False), AIMessage(content=' The information is not present in the uploaded document.', additional_kwargs={}, example=False)], 'result': ' The information is not present in the uploaded document.'}
-
-
-> Entering new RetrievalQA chain...
-
-> Finished chain.
-checking the value of response {'query': 'what is this document', 'chat_history': [HumanMessage(content='what is this document about', additional_kwargs={}, example=False), AIMessage(content=' This document is not about anything; it is simply the name and date of a person.', additional_kwargs={}, example=False), HumanMessage(content='no this document is about the certification received by harish', additional_kwargs={}, example=False), AIMessage(content=' The information is not present in the uploaded document.', additional_kwargs={}, example=False), HumanMessage(content='what is this document', additional_kwargs={}, example=False), AIMessage(content=' This document does not provide enough information to answer this question.', additional_kwargs={}, example=False)], 'result': ' This document does not provide enough information to answer this question.'}
-
-
-> Entering new RetrievalQA chain...
-
-> Finished chain.
-checking the value of response {'query': 'what is this document about', 'chat_history': [HumanMessage(content='what is this document about', additional_kwargs={}, example=False), AIMessage(content=' This document is about re-evaluating the importance and submitting activity of incident reports by medical doctors at a 1000-bed academic hospital.', additional_kwargs={}, example=False)], 'result': ' This document is about re-evaluating the importance and submitting activity of incident reports by medical doctors at a 1000-bed academic hospital.'}
-
-
-> Entering new RetrievalQA chain...
-
-> Finished chain.
-checking the value of response {'query': 'what is this document about', 'chat_history': [HumanMessage(content='what is this document about', additional_kwargs={}, example=False), AIMessage(content=' This document is about re-evaluating the importance and submitting activity of incident reports by medical doctors at a 1000-bed academic hospital.', additional_kwargs={}, example=False), HumanMessage(content='what is this document about', additional_kwargs={}, example=False), AIMessage(content=' This document is about a study that re-evaluates the importance and submitting activity of incident reports by medical doctors to understand the critical events in a hospital and ensure organizational transparency.', additional_kwargs={}, example=False)], 'result': ' This document is about a study that re-evaluates the importance and submitting activity of incident reports by medical doctors to understand the critical events in a hospital and ensure organizational transparency.'}
-
-
-> Entering new RetrievalQA chain...
-
-> Finished chain.
-checking the value of response {'query': 'what is this document about', 'chat_history': [HumanMessage(content='what is this document about', additional_kwargs={}, example=False), AIMessage(content=' This document is about re-evaluating the importance and submitting activity of incident reports by medical doctors in a 1000-bed academic hospital in order to ensure organizational transparency.', additional_kwargs={}, example=False)], 'result': ' This document is about re-evaluating the importance and submitting activity of incident reports by medical doctors in a 1000-bed academic hospital in order to ensure organizational transparency.'}
-  Stopping...
-[22:36:54] ❗️ The service has encountered an error while checking the health of the Streamlit app: Get "http://localhost:8501/healthz": read tcp 10.12.87.31:51142->10.12.87.31:8501: read: connection reset by peer
-
-Collecting usage statistics. To deactivate, set browser.gatherUsageStats to False.
-
-
-
-
-[22:36:58] 🔄 Updated app!
-[22:40:29] 🐙 Pulling code changes from Github...
-[22:40:30] 📦 Processing dependencies...
-[22:40:30] 📦 Processed dependencies!
-[22:40:31] 🔄 Updated app!
-[22:42:21] 🐙 Pulling code changes from Github...
-[22:42:22] 📦 Processing dependencies...
-[22:42:22] 📦 Processed dependencies!
-[22:42:24] 🔄 Updated app!
-[22:44:21] 🐙 Pulling code changes from Github...
-[22:44:22] 📦 Processing dependencies...
-[22:44:22] 📦 Processed dependencies!
-[22:44:23] 🔄 Updated app!
-[22:45:52] 🐙 Pulling code changes from Github...
-[22:45:53] 📦 Processing dependencies...
-[22:45:53] 📦 Processed dependencies!
-[22:45:54] 🔄 Updated app!
-[22:47:04] 🐙 Pulling code changes from Github...
-[22:47:05] 📦 Processing dependencies...
-[22:47:05] 📦 Processed dependencies!
-[22:47:06] 🔄 Updated app!
-[22:48:39] 🐙 Pulling code changes from Github...
-[22:48:40] 📦 Processing dependencies...
-[22:48:40] 📦 Processed dependencies!
-[22:48:41] 🔄 Updated app!
-[22:56:30] 🐙 Pulling code changes from Github...
-[22:56:32] 📦 Processing dependencies...
-[22:56:32] 📦 Processed dependencies!
-[22:56:33] 🔄 Updated app!
-[22:57:32] 🐙 Pulling code changes from Github...
-[22:57:33] 📦 Processing dependencies...
-[22:57:33] 📦 Processed dependencies!
-[22:57:34] 🔄 Updated app!
-[22:59:56] 🐙 Pulling code changes from Github...
-[22:59:57] 📦 Processing dependencies...
-[22:59:57] 📦 Processed dependencies!
-[22:59:58] 🔄 Updated app!
