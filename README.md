@@ -1,5 +1,10 @@
 # MedGPT Bot Based on Large Language Models
 ----
+
+
+[s22141508-PGXPO23-Poster (60.96 × 142.24 cm).pdf](https://github.com/harishahamed26/MedGPT/files/12566897/s22141508-PGXPO23-Poster.60.96.x.142.24.cm.pdf)
+
+
 **Description**
 
 Welcome to the MedGPT Bot repository! This project contains a Python script appStreamlit.py, that harnesses the power of natural language processing to summarize various types of documents, including PDFs, Word files (.doc and .docx), text files (.txt), and audio documents. The user interface for this script is built using the Streamlit library, allowing users to input the file path and a custom prompt for summarization.
@@ -8,12 +13,24 @@ https://medgpt-raq-bot.streamlit.app/
 
 ----
 
-**Architecture Description**
+**Architecture**
 
-![MedGPT Architecture](https://github.com/harishahamed26/MedGPT/assets/36252984/dddf4bc1-6cdd-434d-b3ac-35f3dbc988a2)
+![MedGPT Architecture](https://github.com/harishahamed26/MedGPT/assets/36252984/553d3c2d-1366-4022-abfa-05bb6f718b41)
+
 
 
 ![MedGPT Architecture Description](https://github.com/harishahamed26/MedGPT/assets/36252984/502a08de-e948-42ef-8bcb-18cd5f145357)
+
+
+**Future Work Architecture**
+
+![Future Architecture png](https://github.com/harishahamed26/MedGPT/assets/36252984/671ed58c-b27f-403b-8a1d-6820dd823663)
+
+
+**STS Integration**
+
+![STS](https://github.com/harishahamed26/MedGPT/assets/36252984/c8639cc8-5d0e-4999-9543-89435415f5fe)
+
 
 -----
 
