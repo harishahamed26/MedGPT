@@ -89,7 +89,7 @@ Before you can run this project locally, make sure you have Python installed on 
 7. Once you have all the required packages and settings in place, run the application with the following command:
 
    ```
-   streamlit run app.py
+   streamlit run appColab.py
    ```
 
 Necessary Packages
@@ -119,7 +119,7 @@ If you plan to run this project on Google Colab, follow these additional steps:
 3. Run the application and expose it using localtunnel:
 
    ```
-   !streamlit run /content/app.py & npx localtunnel --port 8501
+   !streamlit run /content/appColab.py & npx localtunnel --port 8501
    ```
 
    Once the server is connected, copy the external URL IP address and submit it to the server.
