@@ -29,8 +29,7 @@ https://medgpt-raq-bot.streamlit.app/
 
 **STS Integration**
 
-![STS](https://github.com/harishahamed26/MedGPT/assets/36252984/b60b2f5e-22e5-427f-92bb-70fde6e0cd68)
-
+![STS](https://github.com/harishahamed26/MedGPT/assets/36252984/23a9b19a-f79f-4dc2-ae08-4de805aefcae)
 
 
 -----
