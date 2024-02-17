@@ -1,8 +1,7 @@
 # MedGPT Bot Based on Large Language Models
 ----
 
-Blog: [https://medium.com/@harishahamed26/medgpt-bot-based-on-large-language-models-using-langchain-streamlit-702cb135ea8d]([url](https://medium.com/@harishahamed26/medgpt-bot-based-on-large-language-models-using-langchain-streamlit-702cb135ea8d))
-
+Blog: [https://medium.com/@harishahamed26/medgpt-bot-based-on-large-language-models-using-langchain-streamlit-702cb135ea8d](https://medium.com/@harishahamed26/medgpt-bot-based-on-large-language-models-using-langchain-streamlit-702cb135ea8d)
 
 
 [s22141508-PGXPO23-Poster (60.96 × 142.24 cm).pdf](https://github.com/harishahamed26/MedGPT/files/12566897/s22141508-PGXPO23-Poster.60.96.x.142.24.cm.pdf)
